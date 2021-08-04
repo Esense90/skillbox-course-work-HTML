@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'open-sans';
   src: url(../fonts/open-sans-600.woff2);
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: 'open-sans';
   src: url(../fonts/open-sans-700.woff2);
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -55,6 +55,13 @@ a {
 
 h1, h2, h3, p {
   margin: 0;
+}
+
+.container {
+  max-width: 1600px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
 }
 
 
