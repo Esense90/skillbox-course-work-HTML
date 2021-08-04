@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'open-sans';
+  src: url(../fonts/open-sans-400.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url(../fonts/open-sans-600.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url(../fonts/open-sans-700.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-white: #fff;
+  --color-grey: #333;
+  --color-black: #000;
+  --color-light-grey: #999;
+  --color-purpule: #9D5CD0;
+  --color-light-purpule: #D1A9F0;
+}
+
+body {
+  font-family: 'open-sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+
+
+
+
