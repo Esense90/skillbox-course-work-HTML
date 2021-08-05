@@ -51,6 +51,18 @@
   background: rgba(0, 0, 0, 0.4);
 }
 
+.dropdown__title {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-white);
+}
+
+.dropdown__window-choice_link {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-white);
+}
+
 
 
 
