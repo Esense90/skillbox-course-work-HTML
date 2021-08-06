@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/simplebar.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/header_style.css">
 
@@ -64,34 +65,36 @@
                 <path d="M11 1L6 6L1 1" stroke="white" />
               </svg>
             </h3>
-            <ul class="dropdown__window-choice_list">
-              <li class="dropdown__window-choice_item ">
-                <a class="dropdown__window-choice_link" href="#">Тинторетто</a>
-              </li>
-              <li class="dropdown__window-choice_item">
-                <a class="dropdown__window-choice_link" href="#">Фридрих</a>
-              </li>
-              <li class="dropdown__window-choice_item">
-                <a class="dropdown__window-choice_link" href="#">Леонардо</a>
-              </li>
-              <li class="dropdown__window-choice_item">
-                <a class="dropdown__window-choice_link" href="#">Верроккьо</a>
-              </li>
-              <li class="dropdown__window-choice_item">
-                <a class="dropdown__window-choice_link" href="#">Тинторетто</a>
-              </li>
-              <li class="dropdown__window-choice_item">
-                <a class="dropdown__window-choice_link" href="#">Фридрих</a>
-              </li>
-              <li class="dropdown__window-choice_item">
-                <a class="dropdown__window-choice_link" href="#">Верроккьо</a>
-              </li>
-              <li class="dropdown__window-choice_item">
-                <a class="dropdown__window-choice_link" href="#">Фридрих</a>
-              </li>
-            </ul>
+            <nav class="dropdown__nav">
+              <ul class="dropdown__window-choice_list" data-simplebar>
+                <li class="dropdown__window-choice_item" style="background-image: url(./img/list1_img1.png);">
+                  <a class="dropdown__window-choice_link" href="#">Тинторетто</a>
+                </li>
+                <li class="dropdown__window-choice_item" style="background-image: url(./img/list1_img2.png);">
+                  <a class="dropdown__window-choice_link" href="#">Фридрих</a>
+                </li>
+                <li class="dropdown__window-choice_item" style="background-image: url(./img/list1_img3.png);">
+                  <a class="dropdown__window-choice_link" href="#">Леонардо</a>
+                </li>
+                <li class="dropdown__window-choice_item" style="background-image: url(./img/list1_img4.png);">
+                  <a class="dropdown__window-choice_link" href="#">Верроккьо</a>
+                </li>
+                <li class="dropdown__window-choice_item" style="background-image: url(./img/list1_img1.png);">
+                  <a class="dropdown__window-choice_link" href="#">Тинторетто</a>
+                </li>
+                <li class="dropdown__window-choice_item" style="background-image: url(./img/list1_img2.png);">
+                  <a class="dropdown__window-choice_link" href="#">Фридрих</a>
+                </li>
+                <li class="dropdown__window-choice_item" style="background-image: url(./img/list1_img3.png);">
+                  <a class="dropdown__window-choice_link" href="#">Верроккьо</a>
+                </li>
+                <li class="dropdown__window-choice_item" style="background-image: url(./img/list1_img4.png);">
+                  <a class="dropdown__window-choice_link" href="#">Фридрих</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <div class="header__bottom-left_dropdown">
+          <!-- <div class="header__bottom-left_dropdown">
             <h3 class=" dropdown__title">Импрессионизм
               <svg class="dropdown__title-icon" width="12" height="7" viewBox="0 0 12 7" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -226,10 +229,9 @@
                 <a class="dropdown__window-choice_link" href="#">Фридрих</a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
- 
 
 
 
@@ -237,7 +239,8 @@
 
 
 
-  
+
+
   </header>
 
 
@@ -248,8 +251,9 @@
 
 
 
+<script src="./js/simplebar.min.js"></script>
 
-
+  
 </body>
 
 </html>
