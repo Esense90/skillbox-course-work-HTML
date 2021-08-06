@@ -93,11 +93,13 @@
 }
 
 .dropdown__nav.active {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dropdown__window-choice_list {
-  padding: 40px 0 0 40px;
+  display: flex;
   width: 220px;
   height: 220px;
 }
@@ -118,7 +120,6 @@
 
 .simplebar-track.simplebar-vertical {
   background-color: var(--color-black);
-  top: 40px;
   right: -21px;
   width: 2px;
 }
