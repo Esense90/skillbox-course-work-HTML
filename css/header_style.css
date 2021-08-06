@@ -51,6 +51,15 @@
   background: rgba(0, 0, 0, 0.4);
 }
 
+.header__bottom-left {
+  display: flex;
+  width: 65%;
+}
+
+.header__bottom-container {
+  padding: 0 0 0 0;
+}
+
 .dropdown__title {
   font-weight: 400;
   font-size: 18px;
@@ -62,6 +71,24 @@
   font-size: 14px;
   color: var(--color-white);
 }
+
+.header__bottom-left_dropdown {
+  position: relative;
+}
+
+.header__bottom-left_dropdown:not(:last-child) {
+  margin-right: 96px;
+}
+  
+
+
+.dropdown__window-choice_list {
+  position: absolute;
+  top: 20px;
+  background-color: black;
+}
+
+
 
 
 
