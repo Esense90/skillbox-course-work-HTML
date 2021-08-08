@@ -79,6 +79,13 @@ textarea {
 
 /* HEADER */
 
+.header {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
 .header__top {
   background-color: var(--color-black);
 }
@@ -129,7 +136,7 @@ textarea {
 }
 
 .header__bottom {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4)
 }
 
 .header__bottom-left {
@@ -235,4 +242,11 @@ input::placeholder {
 .header__bottom-form {
   display: flex;
   padding-bottom: 4px;
+}
+
+
+/* HERO */
+
+.hero__slider-image {
+  width: 100%;
 }

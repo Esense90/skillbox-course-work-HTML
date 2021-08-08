@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/simplebar.css">
     <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+
 
     <title>Blanchard</title>
 
@@ -254,8 +257,37 @@
     </header>
 
     <main>
-      <section class="hero">
-
+      <section class="hero hero__section">
+        <div class="hero__swaiper swiper-container">
+          <div class="hero__swiper-wrapper swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <img class="hero__slider-image" src="./img/hero_img1-xxl.jpg" alt="Пейзаж">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <img class="hero__slider-image" src="./img/hero_img2-xxl.jpg" alt="Пейзаж">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <img class="hero__slider-image" src="./img/hero_img3-xxl.jpg" alt="Пейзаж">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="container hero__container">
+          <h1 class="hero__title">
+            Прикоснитесь к прекрасному
+          </h1>
+          <p class="hero__description">
+            Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+          </p>
+          <button class="btn hero__btn" type="button" tabindex="0" aria-label="Подписаться на рассылку">
+            Подписаться на рассылку
+          </button>
+        </div>
       </section>
     </main>
 
@@ -266,10 +298,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
     <script src="./js/simplebar_open.js"></script>
     <script src="./js/simplebar.min.js"></script>
-
-
+    <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/swiper.js"></script>
 
 
   </body>
