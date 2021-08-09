@@ -53,10 +53,7 @@ a {
   outline: none;
 }
 
-h1,
-h2,
-h3,
-p {
+h1, h2, h3, p {
   margin: 0;
 }
 
@@ -67,15 +64,12 @@ p {
   margin: 0 auto;
 }
 
-input,
-select,
-textarea {
+input, select, textarea {
   border: none;
   appearance: none;
   outline: none;
   cursor: pointer;
 }
-
 
 /* HEADER */
 
@@ -245,7 +239,6 @@ input::placeholder {
   padding-bottom: 4px;
 }
 
-
 /* HERO */
 
 .hero__slider-image {
@@ -255,6 +248,10 @@ input::placeholder {
 
 .swiper-slide {
   height: 790px;
+}
+
+.hero__slider-image {
+  pointer-events: none;
 }
 
 .hero__container {
@@ -293,3 +290,15 @@ input::placeholder {
   padding: 26px 36px 25px 35px;
 }
 
+.hero__slider-image {
+  animation: up 12s ease-in-out infinite;
+}
+
+@keyframes up {
+  50% {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
