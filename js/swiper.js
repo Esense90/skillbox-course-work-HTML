@@ -3,6 +3,6 @@ const swiper = new Swiper('.swiper-container', {
   effect: 'fade',
   speed: 4000,
   autoplay: {
-    delay: 2000,
+    delay: 3000,
   },
 });
