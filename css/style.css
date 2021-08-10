@@ -244,14 +244,11 @@ input::placeholder {
 .hero__slider-image {
   width: 100%;
   height: auto;
+  pointer-events: none;
 }
 
 .swiper-slide {
   height: 790px;
-}
-
-.hero__slider-image {
-  pointer-events: none;
 }
 
 .hero__container {
@@ -291,7 +288,7 @@ input::placeholder {
 }
 
 .hero__slider-image {
-  animation: up 12s ease-in-out infinite;
+  animation: up 15s ease infinite;
 }
 
 @keyframes up {
@@ -356,6 +353,7 @@ input::placeholder {
 }
 
 .gallery__container {
+  display: flex;
   padding-top: 85px;
   min-height: 909px;
 }
@@ -454,4 +452,8 @@ input::placeholder {
 
 .choices__list--dropdown .choices__item:not(:last-child) {
   border-bottom: 1px solid #999;
+}
+
+.gallery__swiper-slide {
+  width: 350px;
 }

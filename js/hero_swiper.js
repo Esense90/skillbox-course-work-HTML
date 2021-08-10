@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.hero__swiper-container', {
   allowTouchMove: false,
   effect: 'fade',
   speed: 4000,
