@@ -326,3 +326,33 @@ input::placeholder {
   padding-top: 21px;
   color: var(--color-grey);
 }
+
+
+/* GALLERY */
+
+
+.gallery {
+  background-image: url(../img/back__gallery.png);
+  background-repeat: no-repeat;
+  min-height: 995px;
+}
+
+.gallery__title {
+  font-weight: 400;
+  font-size: 48px;
+  color: var(--color-white);
+}
+
+.gallery__info {
+  padding-top: 300px;
+}
+
+.gallery__choices-item1 {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-white);
+}
+
+.is-selected {
+  display: none;
+}
