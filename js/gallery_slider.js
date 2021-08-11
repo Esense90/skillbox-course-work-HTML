@@ -1,4 +1,5 @@
 var swiper1 = new Swiper('.gallery__swiper-container', {
+  allowTouchMove: false,
   slidesPerColumnFill: 'row',
   slidesPerColumn: 2,
   slidesPerView: 'auto',

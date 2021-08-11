@@ -463,6 +463,7 @@ input::placeholder {
   width: 1200px;
   margin-left: 49px;
   margin-right: 0;
+  pointer-events: none;
 }
 
 .gallery__swiper-wrapper {
