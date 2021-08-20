@@ -1798,41 +1798,144 @@
                 aria-label="Введите центу от">
               <label class="editions__price-label" for="priceTo">до</label>
               <input class="editions__price-input" type="text" name="priceTo" value="25 000" placeholder="25 000"
-                aria-label="Введите центу до">
+                aria-label="Введите цену до">
               <label class="editions__price-label" for="priceTo">руб.</label>
             </div>
           </div>
         </div>
         <div class="edition__container-right">
           <div class="swiper__container edition__right-swiper">
-            <div class="swiper__pagination-buttons">
-              <div class="gallery__button-prev">
+            <div class="edition__swiper-buttons">
+              <div class="edition__button-prev">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
                     fill="#666666" />
                   <path
                     d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
-                    stroke="black" />
+                    stroke="#666666" />
                   <path d="M16 20L11 15L16 10" stroke="white" />
                 </svg>
               </div>
-              <div class="swiper-pagination gallery__swiper-pagination"></div>
-              <div class="gallery__button-next">
+              <div class="swiper-pagination edition__swiper-pagination"></div>
+              <div class="edition__button-next">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
                     fill="#666666" />
                   <path
                     d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
-                    stroke="black" />
+                    stroke="#666666" />
                   <path d="M14 20L19 15L14 10" stroke="white" />
                 </svg>
               </div>
             </div>
-            <ul class="swiper-wrapper edition__swiper-list">
-              <li class="swiper-slide edition__swiper-item">
-       
+            <ul class="swiper-wrapper edition__swiper-cards">
+              <li class="swiper-slide edition__swiper-card">
+                <div class="edition__card-header">
+                  <picture>
+                    <img src="./img/edition1.jpg" alt="Фото книги">
+                  </picture>
+                </div>
+                <div class="edition__card-main">
+                  <div class="edition__card-main_top">
+                    <h4 class="edition__card-main_title">Искусство цвета</h4>
+                    <span class="edition__card-main_price">620 руб</span>
+                  </div>
+                  <span class="edition__card-main_name">Иттен, Иоханнес</span>
+                </div>
+                <button class="edition__card-button btn">Заказать</button>
+              </li>
+              <li class="swiper-slide edition__swiper-card">
+                <div class="edition__card-header">
+                  <picture>
+                    <img src="./img/edition2.jpg" alt="Фото книги">
+                  </picture>
+                </div>
+                <div class="edition__card-main">
+                  <div class="edition__card-main_top">
+                    <h4 class="edition__card-main_title">Типографика</h4>
+                    <span class="edition__card-main_price">2 450 руб</span>
+                  </div>
+                  <span class="edition__card-main_name">Рудер, Эмиль</span>
+                </div>
+                <button class="edition__card-button btn">Заказать</button>
+              </li>
+              <li class="swiper-slide edition__swiper-card">
+                <div class="edition__card-header">
+                  <picture>
+                    <img src="./img/edition3.jpg" alt="Фото книги">
+                  </picture>
+                </div>
+                <div class="edition__card-main">
+                  <div class="edition__card-main_top">
+                    <h4 class="edition__card-main_title">Книга про буквы</h4>
+                    <span class="edition__card-main_price">2 220 руб</span>
+                  </div>
+                  <span class="edition__card-main_name">Гордон, Юрий</span>
+                </div>
+                <button class="edition__card-button btn">Заказать</button>
+              </li>
+              <li class="swiper-slide edition__swiper-card">
+                <div class="edition__card-header">
+                  <picture>
+                    <img src="./img/edition4.jpg" alt="Фото книги">
+                  </picture>
+                </div>
+                <div class="edition__card-main">
+                  <div class="edition__card-main_top">
+                    <h4 class="edition__card-main_title">Николай Ильин</h4>
+                    <span class="edition__card-main_price">1 100 руб</span>
+                  </div>
+                  <span class="edition__card-main_name">Кричевский, Владимир</span>
+                </div>
+                <button class="edition__card-button btn">Заказать</button>
+              </li>
+              <li class="swiper-slide edition__swiper-card">
+                <div class="edition__card-header">
+                  <picture>
+                    <img src="./img/edition5.jpg" alt="Фото книги">
+                  </picture>
+                </div>
+                <div class="edition__card-main">
+                  <div class="edition__card-main_top">
+                    <h4 class="edition__card-main_title">Модульные сетки в граф...</h4>
+                    <span class="edition__card-main_price">1 450 руб</span>
+                  </div>
+                  <span class="edition__card-main_name">Мюллер-Брокманн, Йозеф
+                  </span>
+                </div>
+                <button class="edition__card-button btn">Заказать</button>
+              </li>
+              <li class="swiper-slide edition__swiper-card">
+                <div class="edition__card-header">
+                  <picture>
+                    <img src="./img/edition6.jpg" alt="Фото книги">
+                  </picture>
+                </div>
+                <div class="edition__card-main">
+                  <div class="edition__card-main_top">
+                    <h4 class="edition__card-main_title">Эволюция графических ст...</h4>
+                    <span class="edition__card-main_price">3 200 руб</span>
+                  </div>
+                  <span class="edition__card-main_name">Хеллер, Чваст</span>
+                </div>
+                <button class="edition__card-button btn">Заказать</button>
+              </li>
+              <li class="swiper-slide edition__swiper-card">
+                <div class="edition__card-header">
+                  <picture>
+                    <img src="./img/edition7.jpg" alt="Фото книги">
+                  </picture>
+                </div>
+                <div class="edition__card-main">
+                  <div class="edition__card-main_top">
+                    <h4 class="edition__card-main_title">Искусство и визуальное в...</h4>
+                    <span class="edition__card-main_price">3 200 руб</span>
+                  </div>
+                  <span class="edition__card-main_name">Арнхейм, Рудольф</span>
+                </div>
+                <button class="edition__card-button btn">Заказать</button>
               </li>
             </ul>
           </div>
@@ -1869,6 +1972,7 @@
   <script src="./js/catalog_tabs.js"></script>
   <script src="./js/catalog_accordion.js"></script>
   <script src="./js/events_swiper.js"></script>
+  <script src="./js/edition_swiper.js"></script>
 
 
 
