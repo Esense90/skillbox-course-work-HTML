@@ -3,7 +3,7 @@ var swiper4 = new Swiper('.project__swiper', {
   allowTouchMove: false,
   slidesPerView: 'auto',
   navigation: {
-    nextEl: '',
-    prevEl: '',
+    nextEl: '.project__button-next',
+    prevEl: '.project__button-prev',
   },
 });
