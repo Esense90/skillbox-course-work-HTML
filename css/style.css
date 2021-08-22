@@ -140,7 +140,7 @@ picture {
 
 .header__bottom-left {
   display: flex;
-  padding: 25px 0 25px 0;
+  padding: 29px 0 25px 0;
   width: 65%;
 }
 
@@ -1166,3 +1166,34 @@ input::placeholder {
   margin-right: 15px;
 }
 
+.contacts__map {
+  width: 1220px;
+  min-height: 700px;
+}
+
+.contacts__main {
+  display: flex;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+.footer {
+  background-color: #000;
+  padding: 49px 0 40px 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__list-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__right {
+  width: 175px;
+}
