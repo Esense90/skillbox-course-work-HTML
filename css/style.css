@@ -77,6 +77,10 @@ picture {
   display: block;
 }
 
+img {
+  max-width: 100%;
+}
+
 
 /* HEADER */
 
@@ -346,7 +350,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 839px;
+  min-height: 910px;
 }
 
 .is-selected {
@@ -356,7 +360,6 @@ input::placeholder {
 .gallery__container {
   display: flex;
   padding-top: 85px;
-  min-height: 909px;
 }
 
 .gallery__name {
@@ -479,11 +482,16 @@ input::placeholder {
 }
 
 .gallery__swiper-container {
-  max-width: 1150px;
+  width: 1150px;
+}
+
+.gallery__swiper-slide {
+  max-width: 350px;
+  max-height: 350px;
 }
 
 .gallery__swiper-img {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 
