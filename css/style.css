@@ -77,11 +77,6 @@ picture {
   display: block;
 }
 
-img {
-  max-width: 100%;
-}
-
-
 /* HEADER */
 
 .header {
@@ -479,19 +474,6 @@ input::placeholder {
 
 .gallery__right {
   padding: 19px 0 0 49px;
-}
-
-.gallery__swiper-container {
-  width: 1150px;
-}
-
-.gallery__swiper-slide {
-  max-width: 350px;
-  max-height: 350px;
-}
-
-.gallery__swiper-img {
-  object-fit: cover;
 }
 
 
@@ -1195,4 +1177,3 @@ input::placeholder {
 .footer__right {
   width: 175px;
 }
-
