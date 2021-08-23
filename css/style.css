@@ -43,6 +43,8 @@ ul {
 
 a {
   text-decoration: none;
+  outline: none;
+  border: none;
 }
 
 .btn {
@@ -74,6 +76,7 @@ input, select, textarea {
 picture {
   display: block;
 }
+
 
 /* HEADER */
 
@@ -246,13 +249,7 @@ input::placeholder {
 /* HERO */
 
 .hero__slider-image {
-  width: 100%;
-  height: auto;
   pointer-events: none;
-}
-
-.hero__swiper-slide {
-  height: 790px;
 }
 
 .hero__container {
@@ -292,7 +289,7 @@ input::placeholder {
 }
 
 .hero__slider-image {
-  animation: up 15s ease infinite;
+  animation: up 30s ease infinite;
 }
 
 @keyframes up {
@@ -307,7 +304,7 @@ input::placeholder {
 /* ABOUT */
 
 .about__container {
-  padding-top: 96px;
+  padding-top: 88px;
   padding-bottom: 70px;
 }
 
@@ -458,22 +455,6 @@ input::placeholder {
   border-bottom: 1px solid #999;
 }
 
-.gallery__swiper-slide {
-  width: 350px;
-  height: 350px;
-}
-
-.gallery__swiper-container {
-  width: 1200px;
-  margin-left: 49px;
-  margin-right: 0;
-  pointer-events: none;
-}
-
-.gallery__swiper-wrapper {
-  width: 1200px;
-}
-
 .gallery__swiper-pagination {
   position: inherit;
   display: flex;
@@ -490,12 +471,21 @@ input::placeholder {
   justify-content: space-between;
   width: 130px;
   padding-bottom: 27px;
-  padding-left: 52px;
+  padding-left: 3px;
 }
 
 .gallery__right {
-  padding-top: 19px;
+  padding: 19px 0 0 49px;
 }
+
+.gallery__swiper-container {
+  max-width: 1150px;
+}
+
+.gallery__swiper-img {
+  object-fit: contain;
+}
+
 
 /* CATALOG */
 
@@ -1181,7 +1171,7 @@ input::placeholder {
 
 .footer {
   background-color: #000;
-  padding: 49px 0 40px 0;
+  padding: 49px 0 43px 0;
 }
 
 .footer__container {
@@ -1197,3 +1187,4 @@ input::placeholder {
 .footer__right {
   width: 175px;
 }
+
