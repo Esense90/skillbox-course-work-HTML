@@ -13,6 +13,3 @@ var swiper1 = new Swiper('.gallery__swiper-container', {
     type: 'fraction',
   },
 });
-
-
-

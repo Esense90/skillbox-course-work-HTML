@@ -1,7 +1,7 @@
 var swiper3 = new Swiper('.edition__right-swiper', {
   loop: 'true',
   allowTouchMove: false,
-  slidesPerView: 'auto',
+  slidesPerView: '3',
   spaceBetween: 50,
   navigation: {
     nextEl: '.edition__button-next',
