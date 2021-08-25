@@ -12,13 +12,13 @@ var swiper1 = new Swiper('.gallery__swiper-container', {
     },
     1024: {
       slidesPerColumnFill: 'row',
-      spaceBetween: 30,
+      spaceBetween: 10,
       slidesPerView: 2,
       slidesPerColumn: 2,
       slidesPerGroup: 2,
       spaceBetween: 30,
     },
-    1400: {
+    1405: {
       slidesPerColumnFill: 'row',
       slidesPerView: 3,
       slidesPerColumn: 2,

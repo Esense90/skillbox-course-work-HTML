@@ -25,11 +25,28 @@
     <div class="header__top">
       <div class="container header__top-container">
         <div class="header__top-left">
+          <button class="header__burger btn">
+            <svg width="36" height="29" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white" />
+              <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white" />
+              <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white" />
+            </svg>
+          </button>
           <a href="#">
             <picture class="header__top-logo">
+              <source srcset="./img/Logo_1024.svg" media="(max-width: 1400px)">
               <img src="./img/Logo_Blanchard.svg" alt="Логотип Blanchard">
             </picture>
           </a>
+          <button class="header__search btn" aria-label="Найти" type="button">
+            <svg width="30" height="29" viewbox="0 0 23 22" fill="none">
+              <rect width="6.8678" height="1.71695"
+                transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                fill="white" />
+            </svg>
+          </button>
           <nav class="header__top-nav ">
             <ul class="header__top-list">
               <li class="header__top-list_item">
@@ -271,16 +288,19 @@
         <div class="swiper-wrapper">
           <div class="gallery__swiper-slide swiper-slide hero__gallery__swiper-slide swiper-slide">
             <picture>
+              <source srcset="./img/hero1_1024.jpg" media="(max-width: 1024px)">
+              <img class="hero__slider-image" src="./img/hero_img1-xxl.jpg" alt="Пейзаж">
+            </picture>
+          </div>
+          <div class="gallery__swiper-slide swiper-slide hero__gallery__swiper-slide swiper-slide">
+            <picture>
+              <source srcset="./img/hero2_1024.jpg" media="(max-width: 1024px)">
               <img class="hero__slider-image" src="./img/hero_img2-xxl.jpg" alt="Пейзаж">
             </picture>
           </div>
           <div class="gallery__swiper-slide swiper-slide hero__gallery__swiper-slide swiper-slide">
             <picture>
-              <img class="hero__slider-image" src="./img/hero_img2-xxl.jpg" alt="Пейзаж">
-            </picture>
-          </div>
-          <div class="gallery__swiper-slide swiper-slide hero__gallery__swiper-slide swiper-slide">
-            <picture>
+              <source srcset="./img/hero3_1024.jpg" media="(max-width: 1024px)">
               <img class="hero__slider-image" src="./img/hero_img3-xxl.jpg" alt="Пейзаж">
             </picture>
           </div>
@@ -894,7 +914,9 @@
             <div class="catalog__countries-discription_content catalog__active" data-target="3">
               <div class="catalog__countries-discription_card card__main">
                 <div class="discription__card-foto">
-                  <img src="./img/catalog_foto1.jpg" alt="Доменико Гирландайо">
+                  <picture>
+                    <img class="discription__card-img" src="./img/catalog_foto1.jpg" alt="Доменико Гирландайо">
+                  </picture>
                 </div>
                 <div class="discription__card-info">
                   <h3 class="discription__card-title">Доменико Гирландайо</h3>
@@ -1603,7 +1625,7 @@
         <h2 class="events__container-title">События</h2>
         <div class="swiper-container events__cards-swiper">
           <ul class="swiper-wrapper events__cards-list">
-            <li class="gallery__swiper-slide swiper-slide events__cards-item">
+            <li class="events__swiper-slide swiper-slide events__cards-item">
               <div class="events__cards-header">
                 <picture class="cards__picture">
                   <img class="cards__img" src="./img/events1.jpg" alt="Событие">
@@ -1622,7 +1644,7 @@
                 </div>
               </div>
             </li>
-            <li class="gallery__swiper-slide swiper-slide events__cards-item">
+            <li class="events__swiper-slide swiper-slide events__cards-item">
               <div class="events__cards-header">
                 <picture class="cards__picture">
                   <img class="cards__img" src="./img/events2.jpg" alt="Событие">
@@ -1641,7 +1663,7 @@
                 </div>
               </div>
             </li>
-            <li class="gallery__swiper-slide swiper-slide events__cards-item">
+            <li class="events__swiper-slide swiper-slide events__cards-item">
               <div class="events__cards-header">
                 <picture class="cards__picture">
                   <img class="cards__img" src="./img/events3.jpg" alt="Событие">
@@ -1660,7 +1682,7 @@
                 </div>
               </div>
             </li>
-            <li class="gallery__swiper-slide swiper-slide events__cards-item events__cards-hidden">
+            <li class="events__swiper-slide swiper-slide events__cards-item events__cards-hidden">
               <div class="events__cards-header">
                 <picture class="cards__picture">
                   <img class="cards__img" src="./img/events4.jpg" alt="Событие">
@@ -1680,7 +1702,7 @@
                 </div>
               </div>
             </li>
-            <li class="gallery__swiper-slide swiper-slide events__cards-item events__cards-hidden">
+            <li class="events__swiper-slide swiper-slide events__cards-item events__cards-hidden">
               <div class="events__cards-header">
                 <picture class="cards__picture">
                   <img class="cards__img" src="./img/events5.jpg" alt="Событие">
