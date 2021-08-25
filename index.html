@@ -493,7 +493,7 @@
             <div class="catalog__countries-discription_content" data-target="1">
               <div class="catalog__countries-discription_card">
                 <div class="discription__card-foto">
-                  <img src="./img/catalog_foto2.jpg" alt="Художник">
+                  <img class="discription__card-img" src="./img/catalog_foto2.jpg" alt="Художник">
                 </div>
                 <div class="discription__card-info">
                   <h3 class="discription__card-title">Что мы о нём знаем?</h3>
@@ -704,7 +704,7 @@
             <div class="catalog__countries-discription_content" data-target="2">
               <div class="catalog__countries-discription_card">
                 <div class="discription__card-foto">
-                  <img src="./img/catalog_foto2.jpg" alt="Художник">
+                  <img class="discription__card-img" src="./img/catalog_foto2.jpg" alt="Художник">
                 </div>
                 <div class="discription__card-info">
                   <h3 class="discription__card-title">Что мы о нём знаем?</h3>
@@ -1197,7 +1197,7 @@
             <div class="catalog__countries-discription_content" data-target="4">
               <div class="catalog__countries-discription_card">
                 <div class="discription__card-foto">
-                  <img src="./img/catalog_foto2.jpg" alt="Художник">
+                  <img class="discription__card-img" src="./img/catalog_foto2.jpg" alt="Художник">
                 </div>
                 <div class="discription__card-info">
                   <h3 class="discription__card-title">Что мы о нём знаем?</h3>
@@ -1406,7 +1406,7 @@
             <div class="catalog__countries-discription_content" data-target="5">
               <div class="catalog__countries-discription_card">
                 <div class="discription__card-foto">
-                  <img src="./img/catalog_foto2.jpg" alt="Художник">
+                  <img class="discription__card-img" src="./img/catalog_foto2.jpg" alt="Художник">
                 </div>
                 <div class="discription__card-info">
                   <h3 class="discription__card-title">Что мы о нём знаем?</h3>
@@ -1815,7 +1815,7 @@
             <div class="edition__price-form">
               <label class="editions__price-label" for="priceFrom">От</label>
               <input class="editions__price-input" type="text" name="priceFrom" value="50" placeholder="50"
-                aria-label="Введите центу от">
+                aria-label="Введите цену от">
               <label class="editions__price-label" for="priceTo">до</label>
               <input class="editions__price-input" type="text" name="priceTo" value="25 000" placeholder="25 000"
                 aria-label="Введите цену до">
@@ -1850,9 +1850,10 @@
             </div>
           </div>
           <ul class="swiper-wrapper edition__swiper-cards">
-            <li class="gallery__swiper-slide swiper-slide edition__swiper-card">
+            <li class="edition__swiper-slide swiper-slide edition__swiper-card">
               <div class="edition__card-header">
                 <picture>
+                  <source class="edition__swiper-img" srcset="./img/edition1_1024.jpg" media="(max-width: 1400px)">
                   <img class="edition__swiper-img" src="./img/edition1.jpg" alt="Фото книги">
                 </picture>
               </div>
@@ -1865,9 +1866,10 @@
               </div>
               <button class="edition__card-button btn">Заказать</button>
             </li>
-            <li class="gallery__swiper-slide swiper-slide edition__swiper-card">
+            <li class="edition__swiper-slide swiper-slide edition__swiper-card">
               <div class="edition__card-header">
                 <picture>
+                  <source class="edition__swiper-img" srcset="./img/edition2_1024.jpg" media="(max-width: 1400px)">
                   <img class="edition__swiper-img" src="./img/edition2.jpg" alt="Фото книги">
                 </picture>
               </div>
@@ -1880,9 +1882,10 @@
               </div>
               <button class="edition__card-button btn">Заказать</button>
             </li>
-            <li class="gallery__swiper-slide swiper-slide edition__swiper-card">
+            <li class="edition__swiper-slide swiper-slide edition__swiper-card">
               <div class="edition__card-header">
                 <picture>
+                  <source class="edition__swiper-img" srcset="./img/edition3_1024.jpg" media="(max-width: 1400px)">
                   <img class="edition__swiper-img" src="./img/edition3.jpg" alt="Фото книги">
                 </picture>
               </div>
@@ -1895,9 +1898,10 @@
               </div>
               <button class="edition__card-button btn">Заказать</button>
             </li>
-            <li class="gallery__swiper-slide swiper-slide edition__swiper-card">
+            <li class="edition__swiper-slide swiper-slide edition__swiper-card">
               <div class="edition__card-header">
                 <picture>
+                  <source class="edition__swiper-img" srcset="./img/edition4_1024.jpg" media="(max-width: 1400px)">
                   <img class="edition__swiper-img" src="./img/edition4.jpg" alt="Фото книги">
                 </picture>
               </div>
@@ -1910,9 +1914,10 @@
               </div>
               <button class="edition__card-button btn">Заказать</button>
             </li>
-            <li class="gallery__swiper-slide swiper-slide edition__swiper-card">
+            <li class="edition__swiper-slide swiper-slide edition__swiper-card">
               <div class="edition__card-header">
                 <picture>
+                  <source srcset="./img/edition5_1024.jpg" media="(max-width: 1400px)">
                   <img class="edition__swiper-img" src="./img/edition5.jpg" alt="Фото книги">
                 </picture>
               </div>
@@ -1926,9 +1931,10 @@
               </div>
               <button class="edition__card-button btn">Заказать</button>
             </li>
-            <li class="gallery__swiper-slide swiper-slide edition__swiper-card">
+            <li class="edition__swiper-slide swiper-slide edition__swiper-card">
               <div class="edition__card-header">
                 <picture>
+                  <source class="edition__swiper-img" srcset="./img/edition6_1024.jpg" media="(max-width: 1400px)">
                   <img class="edition__swiper-img" src="./img/edition6.jpg" alt="Фото книги">
                 </picture>
               </div>
@@ -1941,9 +1947,10 @@
               </div>
               <button class="edition__card-button btn">Заказать</button>
             </li>
-            <li class="gallery__swiper-slide swiper-slide edition__swiper-card">
+            <li class="edition__swiper-slide swiper-slide edition__swiper-card">
               <div class="edition__card-header">
                 <picture>
+                  <source class="edition__swiper-img" srcset="./img/edition7_1024.jpg" media="(max-width: 1400px)">
                   <img class="edition__swiper-img" src="./img/edition7.jpg" alt="Фото книги">
                 </picture>
               </div>
