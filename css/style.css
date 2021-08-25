@@ -83,6 +83,11 @@ picture {
   display: block;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 
 /* HEADER */
 
@@ -268,7 +273,7 @@ input::placeholder {
   font-size: 72px;
   line-height: 83px;
   width: 570px;
-  padding-bottom: 19px;
+  padding-bottom: 29px;
   color: var(--color-white);
   cursor: default;
 }
@@ -309,7 +314,7 @@ input::placeholder {
 /* ABOUT */
 
 .about__container {
-  padding-top: 82px;
+  padding-top: 89px;
   padding-bottom: 70px;
 }
 
@@ -569,7 +574,7 @@ input::placeholder {
 }
 
 .discription__card-subtitle {
-  width: 750px;
+  max-width: 750px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -672,24 +677,20 @@ input::placeholder {
 }
 
 .catalog__accordion {
-  width: 100%;
+  width: 50%;
 }
 
 .catalog__accordion-content_list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: flex-start;
   max-height: 297px;
+  width: 100%;
 }
 
 .catalog__accordion-content_item {
+  max-width: calc(100% / 3);
   height: 32px;
-  max-width: 256px;
-}
-
-.catalog__accordion-content_item {
-  padding-right: 61px;
 }
 
 .catalog__accordion-img {
