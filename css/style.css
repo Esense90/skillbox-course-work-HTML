@@ -90,6 +90,10 @@ picture {
   background-color: var(--color-black);
 }
 
+.header__search, .header__burger {
+  display: none;
+}
+
 .header__top-container {
   display: flex;
   justify-content: space-between;
@@ -764,15 +768,6 @@ input::placeholder {
   margin-bottom: 50px;
 }
 
-.events__cards-item:not(:nth-child(3n)) {
-  margin-right: 50px;
-}
-
-.events__cards-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .cards__picture {
   display: block;
   line-height: 0;
@@ -799,10 +794,6 @@ input::placeholder {
 }
 
 .events__swiper-pagination {
-  display: none;
-}
-
-.events__cards-hidden {
   display: none;
 }
 
@@ -1197,13 +1188,16 @@ input::placeholder {
 
 @media (max-width: 1400px) {
   .container {
-    max-width: 924px;
+    max-width: 1160px;
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
   }
   .header__top-nav, .header__top-right_area, .header__bottom-container {
     display: none;
+  }
+  .header__search, .header__burger {
+    display: block;
   }
   .header__top-left {
     width: 100%;
@@ -1281,16 +1275,71 @@ input::placeholder {
   .catalog__accordion-info {
     padding-top: 8px;
   }
-  .catalog__accordion-content {
-    padding-bottom: 32px;
-  }
-
   .edition__container-left {
     padding-right: 0;
   }
-
   .edition__swiper-slide {
     width: 290px;
     height: 444px;
+  }
+  .events__cards-item {
+    margin-bottom: 34px;
+  }
+  .events__cards-main {
+    padding: 15px 17px 0 34px;
+  }
+  .cards__subtitle {
+    max-width: 221px;
+  }
+  .cards__discription {
+    justify-content: space-between;
+    min-height: 482px;
+  }
+  .events__cards-footer {
+    padding: 0 0 54px 34px;
+  }
+  .edition__right-swiper {
+    padding: 114px 0 0 18px;
+  }
+  .edition__card-header {
+    padding-bottom: 14px;
+  }
+  .project__container {
+    padding-top: 88px;
+  }
+  .contacts {
+    padding-top: 62px;
+  }
+  .contacts__wrapper-wrapper {
+    padding: 123px 36px 0 49px;
+  }
+  .contacts__form-input {
+    width: 335px;
+  }
+  .contacts__social-img {
+    width: 60px;
+    height: 60px;
+  }
+  .contacts__social-img:not(:last-child) {
+    margin-right: 26px;
+  }
+  .footer__item-img {
+    width: 60px;
+    height: 60px;
+  }
+  .footer__right {
+    width: 240px;
+  }
+  .footer {
+    padding: 41px 0 36px 0;
+  }
+  .footer__container {
+    align-items: center;
+  }
+}
+
+@media (max-width: 1025px) {
+  .container {
+    max-width: 925px;
   }
 }
