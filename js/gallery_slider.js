@@ -1,18 +1,18 @@
 var swiper1 = new Swiper('.gallery__swiper-container', {
-  slidesPerColumnFill: 'column',
+  slidesPerColumnFill: 'row',
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 10,
   breakpoints: {
-    667: {
+    768: {
       slidesPerColumnFill: 'row',
       slidesPerView: 2,
       slidesPerColumn: 2,
-      spaceBetween: 34,
+      slidesPerGroup: 2,
+      spaceBetween: 30,
     },
     1024: {
       slidesPerColumnFill: 'row',
-      spaceBetween: 10,
       slidesPerView: 2,
       slidesPerColumn: 2,
       slidesPerGroup: 2,
