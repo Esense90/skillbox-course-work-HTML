@@ -41,10 +41,11 @@ ul {
   padding: 0;
 }
 
-a {
+a, a:hover, a:focus, a:active {
   text-decoration: none;
   outline: none;
   border: none;
+  background: none;
 }
 
 .btn {
@@ -1161,7 +1162,6 @@ input::placeholder {
 
 .contacts__map {
   width: 1220px;
-  min-height: 700px;
 }
 
 .contacts__main {
