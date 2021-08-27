@@ -1372,7 +1372,7 @@ input::placeholder {
     z-index: 10;
   }
   .gallery__swiper-container {
-    min-height: 735px;
+    min-height: 685px;
     max-width: 668px;
     flex-basis: auto;
     padding-top: 49px;
@@ -1390,5 +1390,106 @@ input::placeholder {
   }
   .choices__list--dropdown {
     background-color: var(--color-grey);
+  }
+  .gallery__info-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color-white);
+  }
+  .catalog__container-country {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .catalog__title {
+    padding-right: 41px;
+  }
+  .catalog__countries-list {
+    padding-top: 8px;
+    width: 67%;
+  }
+  .catalog__active {
+    flex-direction: column-reverse;
+  }
+  .catalog__container-content {
+    padding-bottom: 20px;
+  }
+  .catalog__accordion {
+    width: 100%;
+    padding-bottom: 45px;
+  }
+  .catalog__accordion-content_item {
+    max-width: calc(100% / 3);
+  }
+  .catalog__accordion-content_list {
+    max-height: 300px;
+  }
+  .catalog__countries-discription_card {
+    padding: 0;
+  }
+  .events__container {
+    padding-top: 75px;
+  }
+  .cards__subtitle {
+    max-width: 240px;
+  }
+  .cards__title {
+    max-width: 255px;
+  }
+  .edition__container {
+    flex-direction: column;
+  }
+  .edition__right-swiper {
+    width: 657px;
+  }
+  .edition__title {
+    padding-top: 89px;
+  }
+  .edition__checkbox-list {
+    column-count: 3;
+  }
+  .edition__checkbox-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 165px;
+  }
+  .edition__checkbox-item:not(:last-child) {
+    padding-bottom: 0;
+    margin-bottom: 14px;
+  }
+  .checkbox__name-edition {
+    max-width: 142px;
+    line-height: 25px;
+  }
+  .edition__price {
+    padding-top: 20px;
+  }
+  .edition__right-swiper {
+    padding: 50px 0 0 27px;
+    min-height: 545px;
+    width: 100%;
+  }
+  .edition__swiper-buttons {
+    margin-left: -27px;
+  }
+  .edition__card-header, .edition__card-main {
+    max-width: 290px;
+  }
+  .edition__container {
+    padding-bottom: 26px;
+  }
+  .project__swiper-title {
+    padding-top: 59px;
+  }
+  .contacts {
+    padding-top: 46px;
+  }
+  .contacts__form {
+    width: 380px;
+  }
+  .contacts__wrapper-wrapper {
+    padding: 123px 0px 0 49px;
   }
 }

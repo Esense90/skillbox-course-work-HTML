@@ -3,9 +3,22 @@ var swiper3 = new Swiper('.edition__right-swiper', {
   allowTouchMove: false,
   slidesPerView: 2,
   slidesPerGroup: 2,
-  spaceBetween: 50,
+  spaceBetween: 0,
   breakpoints: {
+    894: {
+      allowTouchMove: false,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 30,
+    },
+    1110: {
+      allowTouchMove: false,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 34,
+    },
     1405: {
+      allowTouchMove: false,
       slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 50,
@@ -20,3 +33,4 @@ var swiper3 = new Swiper('.edition__right-swiper', {
     type: 'fraction',
   },
 });
+

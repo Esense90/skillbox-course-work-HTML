@@ -7,9 +7,8 @@
       el: '.events__swiper-pagination',
       type: 'bullets',
     },
-
     breakpoints: {
-      768: {
+      700: {
         slidesPerColumnFill: 'row',
         allowTouchMove: false,
         pagination: false,

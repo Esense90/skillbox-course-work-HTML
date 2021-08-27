@@ -13,3 +13,4 @@ ymaps.ready(init);
         });
           myMap.geoObjects.add(myPlacemark);
 }
+
