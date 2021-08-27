@@ -4,12 +4,12 @@ var swiper1 = new Swiper('.gallery__swiper-container', {
   slidesPerGroup: 1,
   spaceBetween: 10,
   breakpoints: {
-    768: {
+    600: {
       slidesPerColumnFill: 'row',
       slidesPerView: 2,
       slidesPerColumn: 2,
       slidesPerGroup: 2,
-      spaceBetween: 30,
+      spaceBetween: 25,
     },
     1024: {
       slidesPerColumnFill: 'row',

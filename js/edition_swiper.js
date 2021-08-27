@@ -3,9 +3,9 @@ var swiper3 = new Swiper('.edition__right-swiper', {
   allowTouchMove: false,
   slidesPerView: 2,
   slidesPerGroup: 2,
-  spaceBetween: 0,
+  spaceBetween: 5,
   breakpoints: {
-    894: {
+    700: {
       allowTouchMove: false,
       slidesPerView: 2,
       slidesPerGroup: 2,
