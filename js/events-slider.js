@@ -2,6 +2,7 @@
 
   const swiperParams = {
     slidesPerView: 1,
+    spaceBetween: 5,
 
     pagination: {
       el: '.events__swiper-pagination',
