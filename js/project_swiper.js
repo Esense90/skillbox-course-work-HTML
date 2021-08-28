@@ -3,8 +3,9 @@ var swiper4 = new Swiper('.project__swiper', {
   allowTouchMove: false,
   slidesPerView: 1,
   slidesPerGroup: 1,
+  spaceBetween: 50,
   breakpoints: {
-    500: {
+    700: {
       spaceBetween: 50,
       slidesPerView: 2,
       slidesPerGroup: 2,

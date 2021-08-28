@@ -1536,8 +1536,25 @@ input::placeholder {
   .edition__swiper-buttons {
     display: none;
   }
+  .edition__swiper-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 550px;
+  }
   .edition__swiper-slide {
-    width: 100%;
-    height: auto;
+    max-width: 47%;
+  }
+  .edition__right-swiper {
+    max-width: 550px;
+    padding-left: 0;
+  }
+  .contacts__main {
+    flex-direction: column-reverse;
+  }
+  .contacts__map {
+    width: 660px;
+    height: 380px;
   }
 }
+
