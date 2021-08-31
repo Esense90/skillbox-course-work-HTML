@@ -26,7 +26,8 @@
       <div class="container header__top-container">
         <div class="header__top-left">
           <button class="header__burger btn">
-            <svg width="36" height="29" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="burger__svg" width="36" height="29" viewBox="0 0 36 29" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white" />
               <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white" />
               <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white" />
@@ -34,12 +35,13 @@
           </button>
           <a href="#">
             <picture class="header__top-logo">
+              <source srcset="./img/logo_320.svg" media="(max-width: 390px)">
               <source srcset="./img/Logo_1024.svg" media="(max-width: 1400px)">
               <img src="./img/Logo_Blanchard.svg" alt="Логотип Blanchard">
             </picture>
           </a>
           <button class="header__search btn" aria-label="Найти" type="button">
-            <svg width="30" height="29" viewbox="0 0 23 22" fill="none">
+            <svg class="search__svg" width="30" height="29" viewbox="0 0 23 22" fill="none">
               <rect width="6.8678" height="1.71695"
                 transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -288,7 +290,7 @@
         <div class="swiper-wrapper">
           <div class="hero__swiper-slide swiper-slide hero__gallery__swiper-slide swiper-slide">
             <picture>
-              <!-- <source srcset="./img/hero1_320.jpg" media="(max-width: 510px)"> -->
+              <source srcset="./img/hero1_320.jpg" media="(max-width: 390px)">
               <source srcset="./img/hero1_768.jpg" media="(max-width: 893px)">
               <source srcset="./img/hero1_1024.jpg" media="(max-width: 1024px)">
               <img class="hero__slider-image" src="./img/hero_img1-xxl.jpg" alt="Пейзаж">
@@ -296,7 +298,7 @@
           </div>
           <div class="hero__swiper-slide swiper-slide hero__gallery__swiper-slide swiper-slide">
             <picture>
-              <!-- <source srcset="./img/hero2_320.jpg" media="(max-width: 510px)"> -->
+              <source srcset="./img/hero2_320.jpg" media="(max-width: 390px)">
               <source srcset="./img/hero2_768.jpg" media="(max-width: 893px)">
               <source srcset="./img/hero2_1024.jpg" media="(max-width: 1024px)">
               <img class="hero__slider-image" src="./img/hero_img2-xxl.jpg" alt="Пейзаж">
@@ -304,7 +306,7 @@
           </div>
           <div class="hero__swiper-slide swiper-slide hero__gallery__swiper-slide swiper-slide">
             <picture>
-              <!-- <source srcset="./img/hero3_320.jpg" media="(max-width: 510px)"> -->
+              <source srcset="./img/hero3_320.jpg" media="(max-width: 390px)">
               <source srcset="./img/hero3_768.jpg" media="(max-width: 893px)">
               <source srcset="./img/hero3_1024.jpg" media="(max-width: 1024px)">
               <img class="hero__slider-image" src="./img/hero_img3-xxl.jpg" alt="Пейзаж">
@@ -1861,181 +1863,181 @@
                 <label class="edition__checkbox-label">
                   <input class="edition__checkbox-input" type="checkbox">
                   <span class="edition__checkbox-name">Бестселлеры</span>
+                  <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                      fill="#C283F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                      fill="#C283F3" />
+                  </svg>
                 </label>
-                <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
-                    fill="#C283F3" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
-                    fill="#C283F3" />
-                </svg>
               </li>
               <li class="edition__checkbox-item">
                 <label class="edition__checkbox-label">
                   <input class="edition__checkbox-input" type="checkbox">
                   <span class="edition__checkbox-name">Искусство</span>
+                  <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                      fill="#C283F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                      fill="#C283F3" />
+                  </svg>
                 </label>
-                <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
-                    fill="#C283F3" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
-                    fill="#C283F3" />
-                </svg>
               </li>
               <li class="edition__checkbox-item">
                 <label class="edition__checkbox-label">
                   <input class="edition__checkbox-input" type="checkbox">
                   <span class="edition__checkbox-name">Архитектура</span>
+                  <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                      fill="#C283F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                      fill="#C283F3" />
+                  </svg>
                 </label>
-                <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
-                    fill="#C283F3" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
-                    fill="#C283F3" />
-                </svg>
               </li>
               <li class="edition__checkbox-item edition__active">
                 <label class="edition__checkbox-label">
                   <input class="edition__checkbox-input" type="checkbox" checked>
                   <span class="edition__checkbox-name">Дизайн</span>
+                  <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                      fill="#C283F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                      fill="#C283F3" />
+                  </svg>
                 </label>
-                <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
-                    fill="#C283F3" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
-                    fill="#C283F3" />
-                </svg>
               </li>
               <li class="edition__checkbox-item">
                 <label class="edition__checkbox-label">
                   <input class="edition__checkbox-input" type="checkbox">
                   <span class="edition__checkbox-name">Мода</span>
+                  <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                      fill="#C283F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                      fill="#C283F3" />
+                  </svg>
                 </label>
-                <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
-                    fill="#C283F3" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
-                    fill="#C283F3" />
-                </svg>
               </li>
               <li class="edition__checkbox-item">
                 <label class="edition__checkbox-label">
                   <input class="edition__checkbox-input" type="checkbox">
                   <span class="edition__checkbox-name">Детям</span>
+                  <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                      fill="#C283F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                      fill="#C283F3" />
+                  </svg>
                 </label>
-                <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
-                    fill="#C283F3" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
-                    fill="#C283F3" />
-                </svg>
               </li>
               <li class="edition__checkbox-item">
                 <label class="edition__checkbox-label">
                   <input class="edition__checkbox-input" type="checkbox">
                   <span class="edition__checkbox-name checkbox__name-edition">Художественная литература</span>
+                  <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                      fill="#C283F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                      fill="#C283F3" />
+                  </svg>
                 </label>
-                <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
-                    fill="#C283F3" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
-                    fill="#C283F3" />
-                </svg>
               </li>
               <li class="edition__checkbox-item">
                 <label class="edition__checkbox-label">
                   <input class="edition__checkbox-input" type="checkbox">
                   <span class="edition__checkbox-name">Публицистика</span>
+                  <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                      fill="#C283F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                      fill="#C283F3" />
+                  </svg>
                 </label>
-                <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
-                    fill="#C283F3" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
-                    fill="#C283F3" />
-                </svg>
               </li>
               <li class="edition__checkbox-item">
                 <label class="edition__checkbox-label">
                   <input class="edition__checkbox-input" type="checkbox">
                   <span class="edition__checkbox-name">Путеводители</span>
+                  <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                      fill="#C283F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                      fill="#C283F3" />
+                  </svg>
                 </label>
-                <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
-                    fill="#C283F3" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
-                    fill="#C283F3" />
-                </svg>
               </li>
               <li class="edition__checkbox-item">
                 <label class="edition__checkbox-label">
                   <input class="edition__checkbox-input" type="checkbox">
                   <span class="edition__checkbox-name">Философия</span>
+                  <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                      fill="#C283F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                      fill="#C283F3" />
+                  </svg>
                 </label>
-                <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
-                    fill="#C283F3" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
-                    fill="#C283F3" />
-                </svg>
               </li>
               <li class="edition__checkbox-item">
                 <label class="edition__checkbox-label">
                   <input class="edition__checkbox-input" type="checkbox">
                   <span class="edition__checkbox-name">Учебная литература</span>
+                  <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                      fill="#C283F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                      fill="#C283F3" />
+                  </svg>
                 </label>
-                <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
-                    fill="#C283F3" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
-                    fill="#C283F3" />
-                </svg>
               </li>
               <li class="edition__checkbox-item">
                 <label class="edition__checkbox-label">
                   <input class="edition__checkbox-input" type="checkbox">
                   <span class="edition__checkbox-name">Журналы и газеты</span>
+                  <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                      fill="#C283F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                      fill="#C283F3" />
+                  </svg>
                 </label>
-                <svg class="edition__close close__active" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
-                    fill="#C283F3" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
-                    fill="#C283F3" />
-                </svg>
               </li>
             </ul>
           </div>
