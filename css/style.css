@@ -835,6 +835,10 @@ input::placeholder {
   padding-bottom: 28px;
 }
 
+.edition__arrow, .edition__close {
+  display: none;
+}
+
 .edition__checkbox-title {
   font-weight: 700;
   font-size: 16px;
@@ -1616,5 +1620,44 @@ input::placeholder {
   }
   .hero__swiper-container {
     height: 610px;
+  }
+  .edition__checkbox-item {
+    display: none;
+    background-image: none;
+  }
+  .edition__checkbox-item.edition__active {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 9px 0 10px 0;
+    margin: 0;
+  }
+  .edition__checkbox-list {
+    flex-wrap: nowrap;
+    height: auto;
+  }
+  .checkbox__name-edition {
+    max-width: 100%;
+    line-height: inherit;
+  }
+  .edition__checkbox-title {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 9px 0 10px 0;
+  }
+  .edition__arrow {
+    display: block;
+    padding-top: 6px;
+  }
+  .arrow__active {
+    stroke: #c283f3;
+    transform: rotateX(180deg);
+    padding-bottom: 5px;
+  }
+  .edition__close {
+    display: block;
+    padding-top: 4px;
   }
 }
