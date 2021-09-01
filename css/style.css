@@ -2147,5 +2147,9 @@ input::placeholder {
   border: 2px solid #9D5CD0;
 }
 
+.dropdown__window-choice_item:focus {
+  border: 2px solid #9D5CD0;
+}
+
 
 
