@@ -122,6 +122,7 @@ picture {
   font-weight: 600;
   font-size: 18px;
   color: var(--color-white);
+  transition: background-color 0.3ms ease;
 }
 
 .header__top-list_item:not(:first-child) {
@@ -132,13 +133,6 @@ picture {
   font-weight: 400;
   font-size: 18px;
   color: var(--color-white);
-}
-
-.header__top-right_area {
-  background-image: url(../img/arrow_goin.svg);
-  background-repeat: no-repeat;
-  background-position: 0 4px;
-  padding-left: 19px;
 }
 
 .header__bottom {
@@ -1765,8 +1759,8 @@ input::placeholder {
     left: 80px;
     padding-bottom: 0;
   }
-  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal>.swiper-pagination-bullets {
-    bottom: 7px;
+  .gallery__swiper-pagination.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 8px;
     left: 43px;
     width: 43px;
   }
@@ -1860,7 +1854,7 @@ input::placeholder {
   .events__cards-footer {
     padding: 0px 0 55px 28px;
   }
-  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal>.swiper-pagination-bullets {
+  .events__swiper-pagination.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal>.swiper-pagination-bullets {
     bottom: 17px;
     left: 43px;
     width: 200px;
@@ -1870,6 +1864,9 @@ input::placeholder {
   }
   .events {
     padding-bottom: 29px;
+  }
+  .edition__container {
+    padding-bottom: 49px;
   }
   .edition__title {
     font-size: 28px;
@@ -1906,13 +1903,14 @@ input::placeholder {
     padding-bottom: 0;
   }
   .edition__card-button {
-    margin-top: 29px;
+    margin-top: 34px;
     padding: 10px 34px 13px 34px;
   }
   .edition__swiper-slide:not(:last-child) {
     margin-bottom: 49px;
   }
   .edition__card-main_title {
+    display: block;
     width: 130px;
     height: 13px;
     overflow: hidden;
@@ -1920,10 +1918,146 @@ input::placeholder {
     white-space: nowrap;
   }
   .edition__card-main_name {
-    width: 130px;
+    display: block;
+    width: 123px;
     height: 13px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  .project__container-title {
+    font-size: 28px;
+    padding-bottom: 15px;
+  }
+  .project__container {
+    padding-top: 53px;
+  }
+  .project__subtitle-link {
+    letter-spacing: 0.3px;
+  }
+  .project__swiper-title {
+    font-size: 18px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+  }
+  .project__swiper-link {
+    padding: 20px 24px 16px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27px;
+    border: 1px solid #cacaca;
+  }
+  .project__button-next {
+    padding-left: 19px;
+  }
+  .project__button-prev {
+    padding-right: 17px;
+  }
+  .contacts__title {
+    font-size: 28px;
+  }
+  .contacts {
+    position: relative;
+    padding-top: 53px;
+  }
+  .contacts__address {
+    position: absolute;
+    top: 103px;
+    left: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 225px;
+  }
+  .contacts__address-magazine {
+    font-size: 18px;
+    padding-right: 25px;
+  }
+  .contacts__title {
+    padding-bottom: 52px;
+  }
+  .contacts__map {
+    height: 320px;
+  }
+  .contacts__form-label {
+    font-size: 18px;
+    padding-bottom: 23px;
+  }
+  .contacts__wrapper-wrapper {
+    padding: 26px 0px 0 14px;
+  }
+  .contacts__wrapper {
+    min-height: 368px;
+    border: none;
+  }
+  .contacts__form-input {
+    width: 290px;
+    margin-bottom: 20px;
+  }
+  .contacts__form-button {
+    font-size: 12px;
+    padding: 12px 33px;
+  }
+  .contacts__social-title {
+    font-size: 18px;
+    padding-bottom: 13px;
+  }
+  .contacts__form {
+    margin-bottom: 25px;
+  }
+  .contacts__social-img {
+    width: 50px;
+    height: 50px;
+  }
+  .contacts__social-img:not(:last-child) {
+    margin-right: 16px;
+  }
+  .footer__item-img {
+    width: 50px;
+    height: 50px;
+  }
+  .footer {
+    padding: 20px 0 20px 0;
+  }
+  .footer__right {
+    width: 210px;
+    padding-bottom: 17px;
+  }
 }
+
+/* hover, focus, active */
+
+.header__top-list_link:focus {
+  background-color: #7943A4;
+}
+
+.header__top-list_link:hover {
+  background: none;
+  color: #C283F3;
+}
+
+.header__top-list_link:active {
+  color: #7943A4;
+}
+
+.header__top-area_link:focus {
+  background-color: #7943A4;
+}
+
+.header__top-area_link:hover {
+  background: none;
+  color: #C283F3;
+}
+
+.header__top-area_link:active {
+  color: #7943A4;
+}
+
+.header__top-area_link:hover .area__link-img path {
+  fill: #C283F3;
+}
+
+.header__top-area_link:active .area__link-img path {
+  fill: #7943A4;
+}
+
