@@ -2149,7 +2149,6 @@ input::placeholder {
 
 .dropdown__window-choice_item:focus {
   border: 2px solid #9D5CD0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-
 
