@@ -78,6 +78,10 @@ picture {
   display: block;
 }
 
+* {
+  outline: none;
+}
+
 /* HEADER */
 
 .header {
@@ -122,6 +126,7 @@ picture {
   font-weight: 600;
   font-size: 18px;
   color: var(--color-white);
+  transition: color 0.3s ease;
 }
 
 .header__top-list_item:not(:first-child) {
@@ -132,6 +137,7 @@ picture {
   font-weight: 400;
   font-size: 18px;
   color: var(--color-white);
+  transition: color 0.3s ease;
 }
 
 .header__bottom {
@@ -151,10 +157,19 @@ picture {
   justify-content: space-between
 }
 
+.area__link-img path {
+  transition: all 0.3s ease;
+}
+
 .dropdown__title {
   font-weight: 400;
   font-size: 18px;
   color: var(--color-white);
+  transition: color 0.3s ease;
+}
+
+.dropdown__title-icon path {
+  transition: stroke 0.3s ease;
 }
 
 .dropdown__window-choice_link {
@@ -268,7 +283,7 @@ input::placeholder {
   font-size: 18px;
   line-height: 30px;
   max-width: 570px;
-  padding-bottom: 93px;
+  padding-bottom: 90px;
   color: var(--color-white);
   cursor: default;
 }
@@ -279,7 +294,9 @@ input::placeholder {
   color: var(--color-white);
   background-color: var(--color-purpule);
   border-radius: 100px;
+  border: 3px solid var(--color-purpule);
   padding: 26px 36px 25px 35px;
+  transition: border 0.3s ease;
 }
 
 .hero__slider-image {
@@ -2060,3 +2077,52 @@ input::placeholder {
   fill: #7943A4;
 }
 
+.dropdown__title:focus {
+  background-color: #7943A4;
+}
+
+.dropdown__title:hover {
+  background: none;
+  color: #C283F3;
+}
+
+.dropdown__title:active {
+  color: #7943A4;
+}
+
+.dropdown__title:hover .dropdown__title-icon path {
+  stroke: #C283F3;
+}
+
+.dropdown__title:active .dropdown__title-icon path {
+  stroke: #7943A4;
+}
+
+.header__bottom-input:hover {
+  border-color: #C283F3;
+}
+
+.header__bottom-input:focus-within {
+  border-color: #7943A4;
+  color: var(--color-white);
+}
+
+.hero__btn:hover {
+  border: 3px solid #D1A9F0;
+}
+
+.hero__btn:active {
+  border: 3px solid #D1A9F0;
+  background-color: #7943A4;
+}
+
+.hero__btn:focus-visible::after {
+  content: "";
+  position: absolute;
+  width: 328px;
+  height: 85px;
+  margin-top: -35px;
+  margin-left: -287px;
+  border: 2px solid rgba(194, 131, 243, 1);
+  border-radius: 100px;
+}
