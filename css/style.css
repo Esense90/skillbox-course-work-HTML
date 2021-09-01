@@ -82,6 +82,10 @@ picture {
   outline: none;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* HEADER */
 
 .header {
@@ -212,6 +216,8 @@ picture {
   display: flex;
   align-items: center;
   min-height: 40px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
 .dropdown__window-choice_link {
@@ -297,6 +303,17 @@ input::placeholder {
   border: 3px solid var(--color-purpule);
   padding: 26px 36px 25px 35px;
   transition: border 0.3s ease;
+}
+
+.hero__btn:focus-visible::after {
+  content: "";
+  position: absolute;
+  width: 328px;
+  height: 85px;
+  margin-top: -35px;
+  margin-left: -287px;
+  border: 2px solid rgba(194, 131, 243, 1);
+  border-radius: 100px;
 }
 
 .hero__slider-image {
@@ -1123,7 +1140,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 400px;
+  max-width: 400px;
   margin-bottom: 40px;
 }
 
@@ -1495,10 +1512,10 @@ input::placeholder {
     padding-top: 46px;
   }
   .contacts__form {
-    width: 380px;
+    max-width: 380px;
   }
   .contacts__wrapper-wrapper {
-    padding: 123px 0px 0 49px;
+    padding: 123px 44px 0 49px;
   }
   .edition__swiper-buttons {
     margin-left: -27px;
@@ -1736,6 +1753,16 @@ input::placeholder {
     font-size: 12px;
     line-height: 16px;
     padding: 11px 16px 13px 19px;
+  }
+  .hero__btn:focus-visible::after {
+    content: "";
+    position: absolute;
+    width: 207px;
+    height: 50px;
+    margin-top: -18px;
+    margin-left: -188px;
+    border: 2px solid rgba(194, 131, 243, 1);
+    border-radius: 100px;
   }
   .about__title {
     font-size: 28px;
@@ -2007,7 +2034,7 @@ input::placeholder {
     border: none;
   }
   .contacts__form-input {
-    width: 290px;
+    max-width: 290px;
     margin-bottom: 20px;
   }
   .contacts__form-button {
@@ -2116,13 +2143,9 @@ input::placeholder {
   background-color: #7943A4;
 }
 
-.hero__btn:focus-visible::after {
-  content: "";
-  position: absolute;
-  width: 328px;
-  height: 85px;
-  margin-top: -35px;
-  margin-left: -287px;
-  border: 2px solid rgba(194, 131, 243, 1);
-  border-radius: 100px;
+.dropdown__window-choice_item:hover {
+  border: 2px solid #9D5CD0;
 }
+
+
+
