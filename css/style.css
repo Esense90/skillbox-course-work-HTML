@@ -122,7 +122,6 @@ picture {
   font-weight: 600;
   font-size: 18px;
   color: var(--color-white);
-  transition: background-color 0.3ms ease;
 }
 
 .header__top-list_item:not(:first-child) {
