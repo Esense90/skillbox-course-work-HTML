@@ -353,7 +353,7 @@
           <h2 class="gallery__title">Галерея</h2>
           <div class="gallery__name">Фильтр:</div>
           <label class="gallery__label">
-            <select class="gallery__select" name="select">
+            <select class="gallery__select" tabindex="1" name="select">
               <option selected>Живопись</option>
               <option class="gallery__select-item">Рисунок</option>
               <option class="gallery__select-item">Скульптура</option>
@@ -366,29 +366,29 @@
         </div>
         <div class="gallery__swiper-container swiper-container">
           <div class="swiper__pagination-buttons">
-            <div class="gallery__button-prev" tabindex="0">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
+            <button class="gallery__button-prev btn" tabindex="0">
+              <svg class="gallery__btn" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="gallery__hover"
                   d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
                   fill="#666666" />
-                <path
+                <path class="gallery__focus"
                   d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
                   stroke="black" />
                 <path d="M16 20L11 15L16 10" stroke="white" />
               </svg>
-            </div>
+            </button>
             <div class="swiper-pagination gallery__swiper-pagination"></div>
-            <div class="gallery__button-next">
-              <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
+            <button class="gallery__button-next btn">
+              <svg class="gallery__btn" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="gallery__hover"
                   d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
                   fill="#666666" />
-                <path
+                <path class="gallery__focus"
                   d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
                   stroke="black" />
                 <path d="M14 20L19 15L14 10" stroke="white" />
               </svg>
-            </div>
+            </button>
           </div>
           <div class="gallery__swiper-wrapper swiper-wrapper ">
             <div class="gallery__swiper-slide swiper-slide">
@@ -581,8 +581,8 @@
                 <button type="button" class="catalog__country-btn catalog__country-btn_germany btn"
                   aria-label="Германия"></button>
               </li>
-              <li class="catalog__country-item country__btn-active" data-path="3">
-                <button type="button" class="catalog__country-btn catalog__country-btn_italy btn"
+              <li class="catalog__country-item" data-path="3">
+                <button type="button" class="catalog__country-btn catalog__country-btn_italy btn country__btn-active"
                   aria-label="Италия"></button>
               </li>
               <li class="catalog__country-item" data-path="4">
@@ -616,7 +616,7 @@
                 </div>
               </div>
               <ul class="catalog__accordion">
-                <li class="catalog__accordion-item">
+                <li class="catalog__accordion-item catalog__accordion_active">
                   <h3 class="catalog__accordion-title">
                     <span class="catalog__accordion-title_text">
                       C 1400 по 1499 гг.
@@ -827,7 +827,7 @@
                 </div>
               </div>
               <ul class="catalog__accordion">
-                <li class="catalog__accordion-item">
+                <li class="catalog__accordion-item catalog__accordion_active">
                   <h3 class="catalog__accordion-title">
                     <span class="catalog__accordion-title_text">
                       C 1400 по 1499 гг.
@@ -1044,17 +1044,17 @@
                 </div>
               </div>
               <ul class="catalog__accordion">
-                <li class="catalog__accordion-item">
+                <li class="catalog__accordion-item catalog__accordion_active">
                   <h3 class="catalog__accordion-title">
                     <span class="catalog__accordion-title_text">
                       C 1400 по 1499 гг.
                     </span>
                     <svg class="catalog__accordion-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path
+                      <path class="accordion__circle1"
                         d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
                         fill="#ECECEC" />
-                      <path
+                      <path class="accordion__circle"
                         d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
                         stroke="#ECECEC" />
                       <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
@@ -1096,7 +1096,7 @@
                         <button class="accordion__content-btn btn">Андреа Верроккьо</button>
                       </li>
                       <li class="catalog__accordion-content_item">
-                        <button class="accordion__content-btn btn">Доменико Гирландайо</button>
+                        <button class="accordion__content-btn btn accordion__artist-active">Доменико Гирландайо</button>
                       </li>
                       <li class="catalog__accordion-content_item">
                         <button class="accordion__content-btn btn">Беноццо Гоццоли</button>
@@ -1320,7 +1320,7 @@
                 </div>
               </div>
               <ul class="catalog__accordion">
-                <li class="catalog__accordion-item">
+                <li class="catalog__accordion-item catalog__accordion_active">
                   <h3 class="catalog__accordion-title">
                     <span class="catalog__accordion-title_text">
                       C 1400 по 1499 гг.
@@ -1529,7 +1529,7 @@
                 </div>
               </div>
               <ul class="catalog__accordion">
-                <li class="catalog__accordion-item">
+                <li class="catalog__accordion-item catalog__accordion_active">
                   <h3 class="catalog__accordion-title">
                     <span class="catalog__accordion-title_text">
                       C 1400 по 1499 гг.
