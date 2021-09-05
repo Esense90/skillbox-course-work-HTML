@@ -47,7 +47,6 @@ a:focus,
 a:active {
   text-decoration: none;
   outline: none;
-  background: none;
 }
 
 .btn {
@@ -250,6 +249,7 @@ picture {
   border-bottom: 1px solid var(--color-white);
   background: none;
   padding: 1px 0 4px 0;
+  transition: border-color 0.3s ease;
 }
 
 input::placeholder {
@@ -485,6 +485,10 @@ input::placeholder {
   line-height: 32px;
   max-width: 401px;
   color: var(--color-white);
+}
+
+.gallery__autorization {
+  color: #C283F3;
 }
 
 .gallery__info-link {
@@ -1251,6 +1255,7 @@ input::placeholder {
 }
 
 .contacts__form {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1262,21 +1267,53 @@ input::placeholder {
   padding: 123px 120px 0 152px;
 }
 
-.contacts__form-label {
+.contacts__form-title {
+  display: block;
   font-weight: 400;
   font-size: 24px;
   color: var(--color-grey);
   padding-bottom: 19px;
 }
 
-.contacts__form-input {
-  border: 1px solid #333333;
-  box-sizing: border-box;
-  border-radius: 100px;
-  width: 400px;
-  height: 40px;
+.contacts__form-name {
+  padding: 11px 195px 10px 22px;
+  border: 1px solid #333;
+  border-radius: 50px;
   margin-bottom: 23px;
-  padding-left: 22px;
+  transition: all 0.3s ease;
+}
+
+.contacts__form-tel {
+  padding: 11px 195px 10px 22px;
+  border: 1px solid #333;
+  border-radius: 50px;
+  margin-bottom: 23px;
+  transition: all 0.3s ease;
+}
+
+.contacts__form-lable1 {
+  position: relative;
+}
+
+.contacts__form-lable1 .js-validate-error-label {
+  position: absolute;
+  top: -15px;
+  padding-left: 23px;
+}
+
+.contacts__form-lable2 {
+  position: relative;
+}
+
+.contacts__form-lable2 .js-validate-error-label {
+  position: absolute;
+  top: -15px;
+  padding-left: 23px;
+}
+
+.js-validate-error-label {
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .contacts__form-button {
@@ -1286,9 +1323,27 @@ input::placeholder {
   border: 2px solid var(--color-purpule);
   border-radius: 100px;
   padding: 17px 34px;
+  transition: all 0.3s ease;
 }
 
-.contacts__form-input::placeholder {
+.contacts__form-button:focus-visible::after {
+  content: "";
+  position: absolute;
+  width: 164px;
+  height: 64px;
+  margin-top: -24px;
+  margin-left: -127px;
+  border: 2px solid #9D5CD0;
+  border-radius: 100px;
+}
+
+.contacts__form-name::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-light-grey);
+}
+
+.contacts__form-tel::placeholder {
   font-weight: 400;
   font-size: 16px;
   color: var(--color-light-grey);
@@ -1303,6 +1358,30 @@ input::placeholder {
 
 .contacts__social-img:not(:last-child) {
   margin-right: 15px;
+}
+
+.social__img1 {
+  background-image: url(../img/Whatsapp-Icon.svg);
+}
+
+.social__img2 {
+  background-image: url(../img/Telegram_2019_Logo.svg);
+}
+
+.contacts__social-img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: opacity 0.3s ease;
+}
+
+.connect {
+  display: flex;
 }
 
 .contacts__map {
@@ -1334,6 +1413,10 @@ input::placeholder {
 
 .footer__right {
   width: 175px;
+}
+
+.footer__item-img {
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 1400px) {
@@ -2625,4 +2708,53 @@ input::placeholder {
 
 .project__btn:active .project__btn-circle1 {
   stroke: var(--color-black);
+}
+
+.contacts__form-name:hover {
+  background: #EAEAEA;
+}
+
+.contacts__form-tel:hover {
+  background: #EAEAEA;
+}
+
+.contacts__form-name:focus {
+  background: #EAEAEA;
+}
+
+.contacts__form-tel:focus {
+  background: #EAEAEA;
+}
+
+.contacts__form-button:hover {
+  background: #9D5CD0;
+  color: var(--color-white);
+}
+
+.contacts__form-button:active {
+  background: #7943A4;
+  border: 2px solid #D1A9F0;
+}
+
+.contacts__social-img:hover,
+.contacts__social-img:focus {
+  opacity: 50%;
+}
+
+.contacts__social-img:active {
+  border: 1px solid #9643A4;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.footer__item-img:focus path {
+  fill: var(--color-white);
+}
+
+.footer__item-img:hover path {
+  fill: var(--color-white);
+}
+
+.footer__item-img:active path {
+  fill: var(--color-purpule);
 }
