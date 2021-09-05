@@ -1,5 +1,4 @@
 var swiper4 = new Swiper('.project__swiper', {
-  loop: 'true',
   allowTouchMove: false,
   slidesPerView: 1,
   slidesPerGroup: 1,

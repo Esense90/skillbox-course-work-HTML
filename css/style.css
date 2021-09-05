@@ -47,7 +47,6 @@ a:focus,
 a:active {
   text-decoration: none;
   outline: none;
-  border: none;
   background: none;
 }
 
@@ -1000,6 +999,7 @@ input::placeholder {
   background: rgba(157, 92, 208, 0.5);
   width: 62px;
   padding-left: 9px;
+  transition: background-color 0.3s ease;
 }
 
 .edition__price-form {
@@ -1043,6 +1043,20 @@ input::placeholder {
   font-weight: 700;
   font-size: 16px;
   color: var(--color-white);
+  margin-left: 5px;
+  margin-bottom: 4px;
+  transition: all 0.3s ease;
+}
+
+.edition__card-button:focus-visible::after {
+  content: "";
+  position: absolute;
+  width: 124px;
+  height: 44px;
+  margin-top: -14px;
+  margin-left: -102px;
+  border: 2px solid #9D5CD0;
+  border-radius: 100px;
 }
 
 .edition__right-swiper {
@@ -1158,6 +1172,21 @@ input::placeholder {
   padding-left: 45px;
 }
 
+.project__btn path {
+  transition: all 0.3s ease;
+}
+
+.project__button-next.swiper-button-disabled,
+.project__button-prev.swiper-button-disabled {
+  opacity: .50;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.project__swiper-link:hover img {
+  transition: all 0.3s ease;
+}
+
 .project__subtitle-tooltip1,
 .project__subtitle-tooltip2,
 .project__subtitle-tooltip3 {
@@ -1177,6 +1206,11 @@ input::placeholder {
 
 .tippy-box .tippy-arrow::before {
   color: var(--color-purpule);
+}
+
+.project__subtitle-link {
+  color: var(--color-purpule);
+  transition: all 0.3s ease;
 }
 
 .contacts__title {
@@ -2064,9 +2098,6 @@ input::placeholder {
   .project__container {
     padding-top: 53px;
   }
-  .project__subtitle-link {
-    letter-spacing: 0.3px;
-  }
   .project__swiper-title {
     font-size: 18px;
     padding-top: 16px;
@@ -2500,4 +2531,98 @@ input::placeholder {
 
 .edition__checkbox-label:focus .edition__checkbox-name::before {
   border-color: #C283F3;
+}
+
+.editions__price-input:hover {
+  background: var(--color-purpule);
+}
+
+.editions__price-input:focus {
+  background: var(--color-purpule);
+  outline: 1px solid var(--color-white);
+}
+
+.editions__price-input:active {
+  background: #7943A4;
+  outline: none;
+}
+
+.edition__card-button:hover {
+  background: var(--color-purpule);
+}
+
+.edition__card-button:active {
+  background: #7943A4;
+  border-color: #D1A9F0;
+}
+
+.project__subtitle-tooltip1:hover svg {
+  fill: #D1A9F0;
+}
+
+.project__subtitle-tooltip2:hover svg {
+  fill: #D1A9F0;
+}
+
+.project__subtitle-tooltip3:hover svg {
+  fill: #D1A9F0;
+}
+
+.project__subtitle-tooltip1:focus svg {
+  fill: #D1A9F0;
+}
+
+.project__subtitle-tooltip2:focus svg {
+  fill: #D1A9F0;
+}
+
+.project__subtitle-tooltip3:focus svg {
+  fill: #D1A9F0;
+}
+
+.project__subtitle-link:focus {
+  background: var(--color-purpule);
+  color: var(--color-white);
+}
+
+.project__subtitle-link:hover {
+  background: none;
+  border-bottom: 1px solid #7943A4;
+}
+
+.project__subtitle-link:active {
+  color: #7943A4;
+  border-color: #7943A4;
+}
+
+.project__swiper-link:hover img {
+  filter: grayscale(0);
+}
+
+.project__swiper-link:focus {
+  border-color: var(--color-purpule);
+}
+
+.project__swiper-link:active {
+  border-color: var(--color-purpule);
+}
+
+.project__swiper-link:active img {
+  filter: grayscale(0);
+}
+
+.project__btn:hover .project__btn-circle {
+  fill: var(--color-purpule);
+}
+
+.project__btn:focus .project__btn-circle1 {
+  stroke: var(--color-black);
+}
+
+.project__btn:active .project__btn-circle {
+  fill: #7943A4;
+}
+
+.project__btn:active .project__btn-circle1 {
+  stroke: var(--color-black);
 }
