@@ -226,8 +226,32 @@ picture {
   transition: all 0.3s ease;
 }
 
+.dropdown__window-choice_item::before {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( 0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+  z-index: 4;
+}
+
 .dropdown__window-choice_link {
   padding-left: 14px;
+}
+
+.dropdown__window-choice_item::before {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( 0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+  z-index: 4;
 }
 
 .simplebar-track.simplebar-vertical {
@@ -396,7 +420,7 @@ input::placeholder {
 
 .gallery__filter {
   flex-basis: 26%;
-  padding-right: 52px;
+  padding-right: 49px;
 }
 
 .gallery__swiper-container {
@@ -540,6 +564,41 @@ input::placeholder {
 
 .gallery__swiper-wrapper {
   height: 350px;
+  padding-left: 3px;
+}
+
+.gallery__swiper-slide {
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery__swiper-slide::after {
+  content: '';
+  background-image: url(../img/modal.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 25%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 7%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.gallery__swiper-slide::before {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(194, 131, 243, 0.4);
+  transition: background-color, opacity 0.3s ease;
 }
 
 
@@ -2356,18 +2415,6 @@ input::placeholder {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.dropdown__window-choice_item::before {
-  opacity: 0;
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient( 0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
-  z-index: 4;
-}
-
 .dropdown__window-choice_item:active::before {
   opacity: 1;
   border: none;
@@ -2757,4 +2804,17 @@ input::placeholder {
 
 .footer__item-img:active path {
   fill: var(--color-purpule);
+}
+
+.gallery__swiper-slide:focus {
+  outline: 2px solid #7943A4;
+}
+
+.gallery__swiper-slide:hover:after {
+  opacity: 1;
+}
+
+.gallery__swiper-slide:active::before {
+  opacity: 1;
+  outline: 2px solid #D1A9F0;
 }
