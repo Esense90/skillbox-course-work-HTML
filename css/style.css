@@ -2097,6 +2097,41 @@ input::placeholder {
 }
 
 @media (max-width: 390px) {
+  .header__form-close {
+    width: 15px;
+    height: 15px;
+  }
+  .search__svg-top {
+    width: 17px;
+    height: 17px;
+  }
+  .search__wrapper-active,
+  .search__wrapper.search__wrapper-active {
+    width: 320px;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.9);
+    right: 0;
+    top: 0;
+  }
+  .header__search-form {
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 80%;
+    padding-top: 14px;
+  }
+  .header__search-input {
+    background: var(--color-black);
+    width: 70%;
+    margin-bottom: 4px;
+  }
+  .header__search-top {
+    margin-right: 3px;
+  }
+  .header__form-close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
   .container {
     max-width: 300px;
     padding-left: 15px;
@@ -2176,7 +2211,7 @@ input::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    padding-bottom: 42px;
+    padding-bottom: 38px;
   }
   .hero__title {
     line-height: 36px;
@@ -2252,6 +2287,7 @@ input::placeholder {
   }
   .catalog__title {
     font-size: 28px;
+    align-self: flex-start;
   }
   .catalog__container {
     padding-top: 53px;
@@ -2299,6 +2335,12 @@ input::placeholder {
   }
   .catalog__accordion-content_item:not(:last-child) {
     margin-bottom: 15px;
+  }
+  .country__btn-active::before {
+    width: 40px;
+    height: 40px;
+    margin-top: -29px;
+    margin-left: -29px;
   }
   .discription__card-foto {
     padding-bottom: 23px;
