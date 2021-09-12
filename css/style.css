@@ -138,8 +138,8 @@ picture {
   transition: color 0.3s ease;
 }
 
-.header__top-list_item:not(:first-child) {
-  margin-left: 62px;
+.header__top-list_item:not(:last-child) {
+  margin-right: 62px;
 }
 
 .header__top-area_link {
@@ -291,6 +291,12 @@ picture {
   transition: border-color 0.3s ease;
 }
 
+.header__bottom-input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
 input::placeholder {
   font-weight: 400;
   font-style: 18px;
@@ -326,7 +332,7 @@ input::placeholder {
   font-size: 72px;
   line-height: 83px;
   max-width: 570px;
-  padding-bottom: 29px;
+  margin-bottom: 20px;
   color: var(--color-white);
   cursor: default;
 }
@@ -336,7 +342,7 @@ input::placeholder {
   font-size: 18px;
   line-height: 30px;
   max-width: 570px;
-  padding-bottom: 90px;
+  margin-bottom: 90px;
   color: var(--color-white);
   cursor: default;
 }
@@ -348,7 +354,7 @@ input::placeholder {
   background-color: var(--color-purpule);
   border-radius: 100px;
   border: 3px solid var(--color-purpule);
-  padding: 26px 36px 25px 35px;
+  padding: 22px 30px 23px 33px;
   transition: border 0.3s ease;
 }
 
@@ -388,6 +394,7 @@ input::placeholder {
   font-weight: 400;
   font-size: 48px;
   color: var(--color-grey);
+  margin-bottom: 21px;
 }
 
 .about__subtitle {
@@ -395,7 +402,6 @@ input::placeholder {
   font-size: 16px;
   line-height: 32px;
   max-width: 1080px;
-  padding-top: 21px;
   color: var(--color-grey);
 }
 
@@ -413,7 +419,7 @@ input::placeholder {
   font-weight: 400;
   font-size: 48px;
   color: var(--color-white);
-  padding-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .is-selected {
@@ -681,7 +687,7 @@ input::placeholder {
   justify-content: space-between;
   align-items: flex-end;
   width: 40.8%;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
 }
 
 .catalog__countries-list {
@@ -695,7 +701,7 @@ input::placeholder {
 }
 
 .catalog__container-content {
-  padding-bottom: 39px;
+  margin-bottom: 39px;
 }
 
 .discription__card-title {
@@ -709,6 +715,7 @@ input::placeholder {
   font-weight: 400;
   font-size: 12px;
   color: var(--color-light-grey);
+  margin-bottom: 8px;
 }
 
 .discription__card-subtitle {
@@ -717,7 +724,6 @@ input::placeholder {
   font-size: 16px;
   line-height: 32px;
   color: var(--color-grey);
-  padding-top: 8px;
 }
 
 .discription__card-link {
@@ -812,7 +818,7 @@ input::placeholder {
   flex-direction: column;
   flex-wrap: wrap;
   max-height: 297px;
-  width: 100%;
+  width: 91%;
 }
 
 .catalog__accordion-content_item {
@@ -854,11 +860,11 @@ input::placeholder {
 }
 
 .events__container {
-  padding-top: 80px;
+  padding-top: 86px;
 }
 
 .events__container-title {
-  padding-bottom: 21px;
+  margin-bottom: 21px;
 }
 
 .cards__place,
@@ -991,7 +997,7 @@ input::placeholder {
   font-size: 48px;
   color: var(--color-white);
   padding-top: 85px;
-  padding-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .edition__arrow,
@@ -1058,8 +1064,8 @@ input::placeholder {
   padding-bottom: 14px;
 }
 
-.edition__price {
-  padding-top: 41px;
+.edition__checkbox {
+  margin-bottom: 41px;
 }
 
 .editions__price-label {
@@ -1181,10 +1187,13 @@ input::placeholder {
 }
 
 .edition__card-button {
-  margin-top: 17px;
   padding: 8px 20px 10px 20px;
   border: 2px solid #9D5CD0;
   border-radius: 100px;
+}
+
+.edition__card-main {
+  padding-bottom: 17px;
 }
 
 .project__container-title {
@@ -1195,7 +1204,7 @@ input::placeholder {
 }
 
 .project__container {
-  padding-top: 85px;
+  padding-top: 82px;
 }
 
 .project__container-subtitle {
@@ -1231,6 +1240,7 @@ input::placeholder {
   filter: grayscale(1);
   max-width: 100%;
   max-height: 100%;
+  opacity: 0.4;
 }
 
 .project__swiper {
@@ -1323,7 +1333,7 @@ input::placeholder {
 }
 
 .contacts__wrapper {
-  width: 672px;
+  width: 521px;
   min-height: 698px;
   border: 1px solid #cacaca;
 }
@@ -1337,8 +1347,9 @@ input::placeholder {
   margin-bottom: 40px;
 }
 
-.contacts__wrapper-wrapper {
-  padding: 123px 120px 0 152px;
+.contacts__wrapper {
+  padding-top: 121px;
+  padding-left: calc((100% - 1630px) / 2 + 15px);
 }
 
 .contacts__form-title {
@@ -1552,8 +1563,8 @@ input::placeholder {
     padding: 96px 0 227px 48px;
     background: rgba(0, 0, 0, 0.9);
   }
-  .header__top-list_item:not(:first-child) {
-    margin-left: 0;
+  .header__top-list_item:not(:last-child) {
+    margin-right: 0;
   }
   .area__link-active {
     display: block;
@@ -1570,6 +1581,9 @@ input::placeholder {
   }
   .header__burger {
     z-index: 100;
+  }
+  .burger__bar {
+    display: block;
   }
   .burger__bar1 {
     width: 36px;
@@ -1622,11 +1636,11 @@ input::placeholder {
     left: 34px;
   }
   .hero__title {
-    padding-bottom: 11px;
+    margin-bottom: 11px;
   }
   .hero__description {
     max-width: 660px;
-    padding-bottom: 132px;
+    margin-bottom: 132px;
   }
   .gallery__swiper-slide {
     width: 280px;
@@ -1654,7 +1668,7 @@ input::placeholder {
   .catalog__container-country {
     width: 71%;
     align-items: end;
-    padding-bottom: 13px;
+    margin-bottom: 13px;
   }
   .catalog__countries-list {
     padding-top: 15px;
@@ -1724,6 +1738,9 @@ input::placeholder {
   }
   .contacts__wrapper-wrapper {
     padding: 123px 36px 0 49px;
+  }
+  .contacts__wrapper {
+    padding-top: 0;
   }
   .contacts__form-input {
     width: 335px;
@@ -1814,7 +1831,7 @@ input::placeholder {
   }
   .catalog__container-country {
     width: 100%;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   .catalog__title {
     padding-right: 41px;
@@ -1827,7 +1844,7 @@ input::placeholder {
     flex-direction: column-reverse;
   }
   .catalog__container-content {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   .catalog__accordion {
     width: 100%;
@@ -1878,8 +1895,8 @@ input::placeholder {
     max-width: 142px;
     line-height: 25px;
   }
-  .edition__price {
-    padding-top: 20px;
+  .edition__checkbox {
+    margin-bottom: 20px;
   }
   .edition__right-swiper {
     padding: 50px 0 0 27px;
@@ -2006,7 +2023,7 @@ input::placeholder {
   .hero__description {
     font-size: 15px;
     text-align: center;
-    padding-bottom: 90px;
+    margin-bottom: 90px;
   }
   .about__title {
     font-size: 40px;
@@ -2211,11 +2228,11 @@ input::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    padding-bottom: 38px;
+    margin-bottom: 38px;
   }
   .hero__title {
     line-height: 36px;
-    padding-bottom: 14px;
+    margin-bottom: 14px;
   }
   .hero__btn {
     font-size: 12px;
@@ -2246,7 +2263,7 @@ input::placeholder {
   }
   .gallery__title {
     font-size: 28px;
-    padding-bottom: 22px;
+    margin-bottom: 22px;
   }
   .gallery__container {
     padding-top: 53px;
@@ -2280,7 +2297,6 @@ input::placeholder {
   .gallery__info-link {
     font-size: 16px;
     line-height: 32px;
-    padding-top: 17px;
   }
   .gallery {
     min-height: 854px;
@@ -2309,7 +2325,7 @@ input::placeholder {
     display: none;
   }
   .catalog__container-country {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .catalog__accordion-title_text {
     font-size: 18px;
@@ -2358,7 +2374,7 @@ input::placeholder {
     padding-top: 54px;
   }
   .events__container-title {
-    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
   .cards__img {
     width: 290px;
@@ -2395,8 +2411,8 @@ input::placeholder {
     padding-top: 53px;
     padding-bottom: 16px;
   }
-  .edition__price {
-    padding-top: 26px;
+  .edition__checkbox {
+    margin-bottom: 26px;
   }
   .edition__right-swiper {
     max-width: 289px;
@@ -2427,8 +2443,10 @@ input::placeholder {
   .edition__card-main_top {
     padding-bottom: 0;
   }
+  .edition__card-main {
+    padding-bottom: 34px;
+  }
   .edition__card-button {
-    margin-top: 34px;
     padding: 10px 34px 13px 34px;
   }
   .edition__swiper-slide:not(:last-child) {
@@ -2654,35 +2672,35 @@ input::placeholder {
 }
 
 .gallery__button-prev:focus .gallery__btn .gallery__focus {
-  stroke: #9D5CD0;
+  stroke: #000000;
 }
 
 .gallery__button-next:focus .gallery__btn .gallery__focus {
-  stroke: #9D5CD0;
+  stroke: #000000;
 }
 
 .gallery__button-prev:hover .gallery__btn .gallery__hover {
-  fill: #D1A9F0;
+  fill: #9D5CD0;
 }
 
 .gallery__button-next:hover .gallery__btn .gallery__hover {
-  fill: #D1A9F0;
+  fill: #9D5CD0;
 }
 
 .gallery__button-prev:active .gallery__btn .gallery__hover {
-  fill: #D1A9F0;
+  fill: #7943A4;
 }
 
 .gallery__button-prev:active .gallery__btn .gallery__focus {
-  stroke: #9D5CD0;
+  stroke: #000000;
 }
 
 .gallery__button-next:active .gallery__btn .gallery__hover {
-  fill: #D1A9F0;
+  fill: #7943A4;
 }
 
 .gallery__button-next:active .gallery__btn .gallery__focus {
-  stroke: #9D5CD0;
+  stroke: #000;
 }
 
 .gallery__button-next.swiper-button-disabled,
@@ -2848,35 +2866,43 @@ input::placeholder {
 }
 
 .edition__button-prev:focus .edition__btn .edition__focus {
-  stroke: #9D5CD0;
+  stroke: #000000;
 }
 
 .edition__button-next:focus .edition__btn .edition__focus {
-  stroke: #9D5CD0;
+  stroke: #000000;
 }
 
 .edition__button-prev:hover .edition__btn .edition__hover {
-  fill: #D1A9F0;
+  fill: #9D5CD0;
+}
+
+.edition__button-prev:hover .edition__btn .edition__focus {
+  stroke: #9D5CD0;
 }
 
 .edition__button-next:hover .edition__btn .edition__hover {
-  fill: #D1A9F0;
+  fill: #9D5CD0;
+}
+
+.edition__button-next:hover .edition__btn .edition__focus {
+  stroke: #9D5CD0;
 }
 
 .edition__button-prev:active .edition__btn .edition__hover {
-  fill: #D1A9F0;
+  fill: #7943A4;
 }
 
 .edition__button-prev:active .edition__btn .edition__focus {
-  stroke: #9D5CD0;
+  stroke: #000000;
 }
 
 .edition__button-next:active .edition__btn .edition__hover {
-  fill: #D1A9F0;
+  fill: #7943A4;
 }
 
 .edition__button-next:active .edition__btn .edition__focus {
-  stroke: #9D5CD0;
+  stroke: #000000;
 }
 
 .edition__checkbox-label:hover .edition__checkbox-name {
@@ -2959,6 +2985,7 @@ input::placeholder {
 
 .project__swiper-link:hover img {
   filter: grayscale(0);
+  opacity: 1;
 }
 
 .project__swiper-link:focus {
@@ -2974,19 +3001,19 @@ input::placeholder {
 }
 
 .project__btn:hover .project__btn-circle {
-  fill: var(--color-purpule);
+  fill: #D1A9F0;
 }
 
 .project__btn:focus .project__btn-circle1 {
-  stroke: var(--color-black);
+  stroke: #9D5CD0;
 }
 
 .project__btn:active .project__btn-circle {
-  fill: #7943A4;
+  fill: #D1A9F0;
 }
 
 .project__btn:active .project__btn-circle1 {
-  stroke: var(--color-black);
+  stroke: #9D5CD0;
 }
 
 .contacts__form-name:hover {

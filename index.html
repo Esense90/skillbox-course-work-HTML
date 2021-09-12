@@ -26,9 +26,9 @@
         <div class="container header__top-container">
           <div class="header__top-left">
             <button class="header__burger btn" type="button" aria-label="Меню" tabindex="0">
-              <div class="burger__bar1 burger__bar"></div>
-              <div class="burger__bar2 burger__bar"></div>
-              <div class="burger__bar3 burger__bar"></div>
+              <span class="burger__bar1 burger__bar"></span>
+              <span class="burger__bar2 burger__bar"></span>
+              <span class="burger__bar3 burger__bar"></span>
           </button>
             <a href="#">
               <picture class="header__top-logo">
@@ -112,8 +112,8 @@
       </div>
       <div class="header__bottom">
         <div class="container header__bottom-container">
-          <div class="header__bottom-left">
-            <div class="header__bottom-left_dropdown">
+          <ul class="header__bottom-left">
+            <li class="header__bottom-left_dropdown">
               <button class="dropdown__title btn" tabindex="0">Реализм
               <svg class="dropdown__title-icon" width="12" height="7" viewbox="0 0 12 7" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -148,8 +148,8 @@
                   </li>
                 </ul>
               </nav>
-            </div>
-            <div class="header__bottom-left_dropdown">
+            </li>
+            <li class="header__bottom-left_dropdown">
               <button class="dropdown__title btn" tabindex="0">Импрессионизм
               <svg class="dropdown__title-icon" width="12" height="7" viewbox="0 0 12 7" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -185,8 +185,8 @@
                   </li>
                 </ul>
               </nav>
-            </div>
-            <div class="header__bottom-left_dropdown">
+            </li>
+            <li class="header__bottom-left_dropdown">
               <button class="dropdown__title btn" tabindex="0">Постимпрессионизм
               <svg class="dropdown__title-icon" width="12" height="7" viewbox="0 0 12 7" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -221,8 +221,8 @@
                   </li>
                 </ul>
               </nav>
-            </div>
-            <div class="header__bottom-left_dropdown">
+            </li>
+            <li class="header__bottom-left_dropdown">
               <button class="dropdown__title btn" tabindex="0">Авангард
               <svg class="dropdown__title-icon" width="12" height="7" viewbox="0 0 12 7" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -257,8 +257,8 @@
                   </li>
                 </ul>
               </nav>
-            </div>
-            <div class="header__bottom-left_dropdown">
+            </li>
+            <li class="header__bottom-left_dropdown">
               <button class="dropdown__title btn" tabindex="0">Футуризм
               <svg class="dropdown__title-icon" width="12" height="7" viewbox="0 0 12 7" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -293,8 +293,8 @@
                   </li>
                 </ul>
               </nav>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="header__bottom-right">
             <form class="header__bottom-form">
               <button class="header__bottom-search_button btn" aria-label="Найти" type="button">
@@ -306,9 +306,7 @@
                   fill="white" />
               </svg>
             </button>
-              <label>
               <input class="header__bottom-input" type="text" placeholder="Поиск по сайту" tabindex="0">
-            </label>
             </form>
           </div>
         </div>
@@ -2185,11 +2183,11 @@
               <svg class="project__btn" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" tabindex="0">
               <path class="project__btn-circle"
                 d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
-                fill="#666666" />
+                fill="#ECECEC" />
               <path class="project__btn-circle1"
                 d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
-                stroke="#666666" />
-              <path class="project__btn-arrow" d="M16 20L11 15L16 10" stroke="white" />
+                stroke="#ECECEC" />
+              <path class="project__btn-arrow" d="M16 20L11 15L16 10" stroke="black" />
             </svg>
             </div>
             <div class="swiper-container project__swiper">
@@ -2245,11 +2243,11 @@
               <svg class="project__btn" width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" tabindex="0">
               <path class="project__btn-circle"
                 d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
-                fill="#666666" />
+                fill="#ECECEC" />
               <path class="project__btn-circle1"
                 d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
-                stroke="#666666" />
-              <path class="project__btn-arrow" d="M14 20L19 15L14 10" stroke="white" />
+                stroke="#ECECEC" />
+              <path class="project__btn-arrow" d="M14 20L19 15L14 10" stroke="black" />
             </svg>
             </div>
           </div>
@@ -2338,7 +2336,6 @@
       </div>
     </footer>
 
-
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./js/simplebar_open.js"></script>
@@ -2364,7 +2361,7 @@
     <script src="./js/mask.js"></script>
     <script src="./js/burger.js"></script>
     <script src="./js/search.js"></script>
-
+    <script src="./js/dropdown.js"></script>
 
   </body>
 
