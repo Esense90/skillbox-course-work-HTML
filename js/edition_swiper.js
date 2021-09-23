@@ -23,6 +23,12 @@ const desctopSlider = () => {
           allowTouchMove: false,
           slidesPerView: 2,
           slidesPerGroup: 2,
+          spaceBetween: 0,
+        },
+        768: {
+          allowTouchMove: false,
+          slidesPerView: 2,
+          slidesPerGroup: 2,
           spaceBetween: 30,
         },
         1110: {

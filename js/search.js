@@ -21,3 +21,18 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.header__search').classList.remove('header__search-active')
   })
 })
+
+document.addEventListener("click", function(e) {
+  let target = e.target;
+  if (!target.closest(".header__search")) {
+    document.querySelectorAll(".search__wrapper").forEach(el => {
+      el.classList.remove("search__wrapper-active");
+    })
+    document.querySelectorAll(".search__wrapper").forEach(el => {
+      el.classList.remove("search__wrapper-active");
+    });
+    document.querySelectorAll(".header__search").forEach(el => {
+      el.classList.remove("header__search-active");
+    });
+  }
+})
