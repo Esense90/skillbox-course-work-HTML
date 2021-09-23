@@ -10,7 +10,6 @@ const showActiveCheckbox = () => {
     }
   })
 }
-
 const publicationAccordion = () => {
   publicationBtn.addEventListener('click', () => {
     publicationBtnArrow.classList.toggle('arrow__active');
@@ -20,7 +19,6 @@ const publicationAccordion = () => {
     })
   })
 }
-
 const publicationCheck = () => {
   for (let i = 0; i < publicationFormInput.length; i++) {
     const el = publicationFormInput[i];
