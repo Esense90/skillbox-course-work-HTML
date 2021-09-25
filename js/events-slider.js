@@ -1,4 +1,4 @@
-(function () {
+(function() {
 
   const swiperParams = {
     slidesPerView: 1,
@@ -7,6 +7,7 @@
     pagination: {
       el: '.events__swiper-pagination',
       type: 'bullets',
+      clickable: 'true',
     },
     breakpoints: {
       700: {
@@ -58,7 +59,3 @@
     allEventsBtn.remove()
   })
 })();
-
-
-
-
