@@ -2069,9 +2069,6 @@ img {
   .edition__container {
     flex-direction: column;
   }
-  .edition__right-swiper {
-    width: 657px;
-  }
   .edition__title {
     padding-top: 89px;
   }
@@ -2099,7 +2096,7 @@ img {
   .edition__right-swiper {
     padding: 50px 0 0 27px;
     min-height: 545px;
-    width: 100%;
+    width: 98%;
   }
   .edition__card-header,
   .edition__card-main {

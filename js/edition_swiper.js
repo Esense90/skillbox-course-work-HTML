@@ -19,12 +19,6 @@ const desctopSlider = () => {
       },
 
       breakpoints: {
-        700: {
-          allowTouchMove: false,
-          slidesPerView: 2,
-          slidesPerGroup: 2,
-          spaceBetween: 0,
-        },
         768: {
           allowTouchMove: false,
           slidesPerView: 2,

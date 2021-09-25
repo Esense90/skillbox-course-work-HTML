@@ -4,7 +4,7 @@ var swiper4 = new Swiper('.project__swiper', {
   slidesPerGroup: 1,
   spaceBetween: 10,
   breakpoints: {
-    710: {
+    655: {
       spaceBetween: 25,
       slidesPerView: 2,
       slidesPerGroup: 2,
