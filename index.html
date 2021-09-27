@@ -326,42 +326,26 @@
       <section class="hero hero__section">
         <div class="hero__swiper-container swiper-container">
           <div class="swiper-wrapper">
-            <div class="hero__swiper-slide swiper-slide hero__swiper-slide swiper-slide">
-              <picture>
-                <source srcset="./img/hero1_320.jpg" media="(max-width: 320px)">
-                <source srcset="./img/hero1_768.jpg" media="(max-width: 768px)">
-                <source srcset="./img/hero1_1024.jpg" media="(max-width: 1024px)">
-                <img class="hero__slider-image" src="./img/hero_img1-xxl.jpg" alt="Пейзаж">
-              </picture>
+            <div class="hero__swiper-slide-next hero__slide swiper-slide">
             </div>
-            <div class="hero__swiper-slide swiper-slide hero__swiper-slide swiper-slide">
-              <picture>
-                <source srcset="./img/hero2_320.jpg" media="(max-width: 320px)">
-                <source srcset="./img/hero2_768.jpg" media="(max-width: 768px)">
-                <source srcset="./img/hero2_1024.jpg" media="(max-width: 1024px)">
-                <img class="hero__slider-image" src="./img/hero_img2-xxl.jpg" alt="Пейзаж">
-              </picture>
+            <div class="hero__swiper-slide-active hero__slide swiper-slide">
             </div>
-            <div class="hero__swiper-slide swiper-slide hero__swiper-slide swiper-slide">
-              <picture>
-                <source srcset="./img/hero3_320.jpg" media="(max-width: 320px)">
-                <source srcset="./img/hero3_768.jpg" media="(max-width: 768px)">
-                <source srcset="./img/hero3_1024.jpg" media="(max-width: 1024px)">
-                <img class="hero__slider-image" src="./img/hero_img3-xxl.jpg" alt="Пейзаж">
-              </picture>
+            <div class="hero__swiper-slide_prev hero__slide swiper-slide">
             </div>
           </div>
         </div>
-        <div class="hero__description-text">
-          <h1 class="hero__title">
-            Прикоснитесь к прекрасному
-          </h1>
-          <p class="hero__description">
-            Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
-          </p>
-          <button class="btn hero__btn" type="button" tabindex="0" aria-label="Подписаться на рассылку">
+        <div class="container">
+          <div class="hero__description-text">
+            <h1 class="hero__title">
+              Прикоснитесь к прекрасному
+            </h1>
+            <p class="hero__description">
+              Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+            </p>
+            <button class="btn hero__btn" type="button" tabindex="0" aria-label="Подписаться на рассылку">
           Подписаться на рассылку
         </button>
+          </div>
         </div>
       </section>
       <section class="about">
@@ -2199,7 +2183,7 @@
               <path class="project__btn-arrow" d="M16 20L11 15L16 10" stroke="black" />
             </svg>
             </div>
-            <div class="swiper-container project__swiper">
+            <div class=" project__swiper swiper-container">
               <ul class="swiper-wrapper project__swiper-list">
                 <li class="swiper-slide project__swiper-item">
                   <a class="project__swiper-link" href="#" tabindex="0">

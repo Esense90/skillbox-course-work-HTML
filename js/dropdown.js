@@ -14,8 +14,6 @@ document.querySelectorAll(".dropdown__title").forEach(item => {
         el.classList.remove("active");
       }
     })
-    dropdown.classList.toggle("dropdown__title");
-    btn.classList.toggle("active__btn")
   })
 })
 
