@@ -1268,10 +1268,6 @@ img {
   padding-bottom: 26px;
 }
 
-.project__swiper-item {
-  max-width: 450px;
-}
-
 .project__swiper-link {
   padding: 10px 10px 10px 10px;
   display: flex;
@@ -2155,9 +2151,6 @@ img {
   .project__swiper-link {
     height: 89px;
     padding: 7px 32px 7px 25px;
-  }
-  .project__swiper-item {
-    width: 274px;
   }
   .project__button-prev {
     padding-right: 24px;

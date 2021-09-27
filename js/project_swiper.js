@@ -1,22 +1,22 @@
-const swiperProject = new Swiper('.project__swiper', {
-  allowTouchMove: false,
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-  spaceBetween: 10,
-  breakpoints: {
-    655: {
-      spaceBetween: 50,
-      slidesPerView: 2,
-      slidesPerGroup: 1,
-    },
-    1200: {
-      spaceBetween: 50,
-      slidesPerView: 3,
-      slidesPerGroup: 1,
-    }
-  },
+const projectSlider = document.querySelector('.project__swiper');
+var mySwiperProject = new Swiper(projectSlider, {
+
+  slideClass: 'project__swiper-item',
   navigation: {
     nextEl: '.project__button-next',
     prevEl: '.project__button-prev',
+  },
+  spaceBetween: 50,
+  loop: true,
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+    },
+    600: {
+      slidesPerView: 2,
+    },
+    320: {
+      slidesPerView: 1,
+    }
   },
 });
