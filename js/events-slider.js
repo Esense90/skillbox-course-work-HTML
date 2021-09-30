@@ -58,4 +58,10 @@
 
     allEventsBtn.remove()
   })
+
 })();
+
+eventsBtn.onclick = function remove() {
+  document.querySelectorAll('#eventHdn1 button, #eventHdn2 button')
+    .forEach(node => node.removeAttribute('tabindex'));
+}

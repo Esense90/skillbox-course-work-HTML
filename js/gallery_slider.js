@@ -18,7 +18,7 @@ var swiper1 = new Swiper('.gallery__swiper-container', {
       slidesPerGroup: 2,
       spaceBetween: 30,
     },
-    1405: {
+    1100: {
       slidesPerColumnFill: 'row',
       slidesPerView: 3,
       slidesPerColumn: 2,
