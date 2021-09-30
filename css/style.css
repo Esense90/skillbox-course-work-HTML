@@ -3146,8 +3146,16 @@
     fill: #9D5CD0;
   }
 
+  .gallery__button-prev:hover .gallery__btn .gallery__focus {
+    stroke: #9D5CD0;
+  }
+
   .gallery__button-next:hover .gallery__btn .gallery__hover {
     fill: #9D5CD0;
+  }
+
+  .gallery__button-next:hover .gallery__btn .gallery__focus {
+    stroke: #9D5CD0;
   }
 
   .gallery__button-prev:active .gallery__btn .gallery__hover {
@@ -3163,7 +3171,7 @@
   }
 
   .gallery__button-next:active .gallery__btn .gallery__focus {
-    stroke: #000;
+    stroke: #000000;
   }
 
   .gallery__button-next.swiper-button-disabled,
