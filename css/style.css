@@ -343,7 +343,7 @@
   .hero__description-text {
     position: relative;
     z-index: 10;
-    padding: 231px 0 122px 0;
+    padding: 231px 0 121px 0;
   }
 
   .hero__slider-image {
@@ -546,7 +546,7 @@
   }
 
   .choices__list--single .choices__item {
-    padding: 11px 0 11px 14px;
+    padding: 11px 0 9px 14px;
   }
 
   .choices[data-type*=select-one]:after {
@@ -607,7 +607,7 @@
     justify-content: space-between;
     width: 130px;
     padding-bottom: 27px;
-    padding-left: 3px;
+    padding-left: 6px;
   }
 
   .gallery__button-prev path {
@@ -621,6 +621,7 @@
   .gallery__swiper-img {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
   }
 
   .gallery__swiper-wrapper {
@@ -664,7 +665,7 @@
   /* CATALOG */
 
   .catalog__container {
-    padding-top: 84px;
+    padding-top: 85px;
   }
 
   .catalog__title {
@@ -754,7 +755,7 @@
     font-weight: 400;
     font-size: 12px;
     color: var(--color-light-grey);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 
   .discription__card-subtitle {
@@ -846,10 +847,6 @@
     border-bottom: 1px solid #cacaca;
   }
 
-  .catalog__accordion-content {
-    border-top: 1px solid #cacaca;
-  }
-
   .catalog__accordion {
     width: 50%;
   }
@@ -888,6 +885,8 @@
     display: flex;
     padding-top: 32px;
     padding-bottom: 18px;
+    padding-left: 2px;
+    border-top: 1px solid #cacaca;
   }
 
   .catalog__accordion-info {
@@ -943,14 +942,14 @@
     font-weight: 400;
     font-size: 16px;
     color: rgba(157, 92, 208, 1);
-    padding-left: 50px;
+    padding-left: 44px;
     height: 25px;
   }
 
   .events__cards-item {
     width: 500px;
     min-height: 700px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .cards__picture {
@@ -1007,7 +1006,7 @@
     font-weight: 700;
     font-size: 18px;
     color: var(--color-purpule);
-    padding: 17px 35px;
+    padding: 17px 33px 17px 34px;
     border: 2px solid #9D5CD0;
     border-radius: 100px;
     margin-bottom: 10px;
@@ -1045,6 +1044,10 @@
   .edition__arrow,
   .edition__close {
     display: none;
+  }
+
+  .edition__close {
+    fill: #c283f3;
   }
 
   .edition__checkbox-title {
@@ -1107,7 +1110,7 @@
   }
 
   .edition__checkbox {
-    margin-bottom: 37px;
+    margin-bottom: 38px;
   }
 
   .editions__price-label {
@@ -1123,9 +1126,16 @@
     font-size: 16px;
     color: var(--color-white);
     background: rgba(157, 92, 208, 0.5);
-    width: 62px;
+    width: 63px;
     padding-left: 9px;
     transition: background-color 0.3s ease;
+  }
+
+  .editions__price-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-white);
+    letter-spacing: 0.1px;
   }
 
   .edition__price-form {
@@ -1139,11 +1149,11 @@
 
   .edition__container {
     display: flex;
-    padding-bottom: 72px;
+    padding-bottom: 70px;
   }
 
   .edition__container-left {
-    padding-right: 173px;
+    padding-right: 166px;
   }
 
   .edition__card-main_title {
@@ -1166,27 +1176,30 @@
   }
 
   .edition__card-button {
+    position: relative;
     font-weight: 700;
     font-size: 16px;
     color: var(--color-white);
-    margin-left: 5px;
     margin-bottom: 4px;
     transition: all 0.3s ease;
   }
 
-  .edition__card-button:focus-visible::after {
-    content: "";
+  .edition__card-button::after {
     position: absolute;
-    width: 124px;
-    height: 44px;
-    margin-top: -14px;
-    margin-left: -102px;
+    content: "";
+    top: -7px;
+    left: -7px;
+    right: -7px;
+    bottom: -7px;
+  }
+
+  .edition__card-button:focus::after {
     border: 2px solid #9D5CD0;
     border-radius: 100px;
   }
 
   .edition__right-swiper {
-    padding: 114px 0 0 0;
+    padding: 114px 0 3px 8px;
   }
 
   .edition__swiper-buttons {
@@ -1235,7 +1248,7 @@
   }
 
   .edition__card-main {
-    padding-bottom: 17px;
+    padding-bottom: 15px;
   }
 
   .project__container-title {
@@ -1246,7 +1259,7 @@
   }
 
   .project__container {
-    padding-top: 82px;
+    padding-top: 85px;
   }
 
   .project__container-subtitle {
@@ -1346,7 +1359,7 @@
   }
 
   .contacts {
-    padding-top: 85px;
+    padding-top: 83px;
   }
 
   .contacts__header {
@@ -1370,12 +1383,6 @@
     font-style: normal;
   }
 
-  .contacts__wrapper {
-    width: 521px;
-    height: 575px;
-    border: 1px solid #cacaca;
-  }
-
   .contacts__form {
     position: relative;
     display: flex;
@@ -1386,7 +1393,10 @@
   }
 
   .contacts__wrapper {
-    padding-top: 121px;
+    width: 521px;
+    height: 575px;
+    border: 1px solid #cacaca;
+    padding-top: 123px;
     padding-left: calc((100% - 1630px) / 2 + 15px);
   }
 
@@ -1399,7 +1409,7 @@
   }
 
   .contacts__form-name {
-    padding: 11px 195px 10px 22px;
+    padding: 10px 188px 10px 22px;
     border: 1px solid #333;
     border-radius: 50px;
     margin-bottom: 23px;
@@ -1407,10 +1417,10 @@
   }
 
   .contacts__form-tel {
-    padding: 11px 195px 10px 22px;
+    padding: 10px 188px 10px 22px;
     border: 1px solid #333;
     border-radius: 50px;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
     transition: all 0.3s ease;
   }
 
@@ -1477,11 +1487,11 @@
     font-weight: 400;
     font-size: 24px;
     color: var(--color-grey);
-    padding-bottom: 18px;
+    padding-bottom: 16px;
   }
 
   .contacts__social-img:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 17px;
   }
 
   .social__img1 {
@@ -2358,6 +2368,9 @@
       max-width: 99%;
       border: none;
     }
+    .contacts__map>.ymaps-2-1-79-map>.ymaps-2-1-79-map>.ymaps-2-1-79-inner-panes .ymaps-2-1-79-events-pane {
+      pointer-events: none;
+    }
   }
 
   @media (max-width: 510px) {
@@ -2432,7 +2445,7 @@
       padding: 9px 0 10px 0;
       margin: 0;
     }
-    .edition__close {
+    .edition__checkbox-input[type="checkbox"]:checked+.edition__checkbox-name+.edition__close {
       display: block;
     }
     .edition__checkbox-item {
@@ -3229,6 +3242,7 @@
 
   .ui-accordion-header-active .catalog__accordion-icon {
     transform: rotate(180deg);
+    overflow: visible;
   }
 
   .catalog__accordion-item:active {
@@ -3279,6 +3293,10 @@
     background-color: #9D5CD0;
   }
 
+  .accordion__artist-active {
+    color: var(--color-purpule);
+  }
+
   .accordion__content-btn:focus {
     color: var(--color-white);
   }
@@ -3299,12 +3317,6 @@
 
   .accordion__content-btn:active::before {
     background: none;
-  }
-
-  .accordion__artist-active {
-    background: #9D5CD0;
-    color: var(--color-white);
-    border-bottom: none;
   }
 
   .catalog__accordion-link_text:hover {
