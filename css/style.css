@@ -620,7 +620,7 @@
 
   .gallery__swiper-img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -795,7 +795,17 @@
   }
 
   .catalog__countries-discription_card {
+    flex-basis: 47%;
     padding-right: 50px;
+    display: none;
+  }
+
+  .painter__active {
+    display: block;
+  }
+
+  .other__painter {
+    display: block;
   }
 
   .catalog__accordion-title_text {
@@ -1560,7 +1570,7 @@
     }
     .gallery__swiper-img {
       width: 280px;
-      height: 280px;
+      height: 100%;
     }
     .gallery__filter {
       flex-basis: 35%;
@@ -1842,7 +1852,7 @@
     }
     .gallery__swiper-img {
       width: 280px;
-      height: 280px;
+      height: 100%;
     }
     .gallery__filter {
       flex-basis: 35%;
@@ -1899,6 +1909,9 @@
     }
     .catalog__accordion-info {
       padding-top: 8px;
+    }
+    .catalog__countries-discription_card {
+      flex-basis: 81%;
     }
     .edition__container-left {
       padding-right: 0;
@@ -2058,6 +2071,9 @@
       width: 485px;
       height: 698px;
     }
+    .contacts__form-title {
+      padding-bottom: 17px;
+    }
   }
 
   @media (max-width: 893px) {
@@ -2085,6 +2101,9 @@
     .header__top-list {
       padding: 51px 0 254px 49px;
     }
+    .hero__section {
+      padding-top: 183px;
+    }
     .hero__description {
       margin-bottom: 133px;
     }
@@ -2101,8 +2120,8 @@
       background-image: url(../img/hero3_768.jpg);
     }
     .search__wrapper.search__wrapper-active {
-      width: 89%;
-      padding: 64px 50px 30px 50px;
+      width: 87%;
+      padding: 33px 50px 30px 50px;
       top: 0;
       right: 0;
       background: var(--color-black);
@@ -2166,7 +2185,10 @@
     }
     .catalog__accordion {
       width: 100%;
-      padding-bottom: 45px;
+      padding-bottom: 50px;
+    }
+    .catalog__accordion-content {
+      padding: 33px 0 18px 0;
     }
     .catalog__accordion-content_item {
       max-width: calc(100% / 3);
@@ -2178,7 +2200,10 @@
       padding: 0;
     }
     .discription__card-foto {
-      padding-bottom: 35px;
+      padding-bottom: 30px;
+    }
+    .events__cards-footer {
+      padding: 0 0 54px 28px;
     }
     .events__container {
       padding-top: 75px;
@@ -2260,7 +2285,7 @@
       max-width: 380px;
     }
     .contacts__wrapper-wrapper {
-      padding: 122px 36px 0 49px;
+      padding: 122px 44px 0 49px;
     }
     .contacts__form-name {
       padding: 11px 123px 10px 22px;
@@ -2795,7 +2820,7 @@
       margin-right: 10px;
     }
     .discription__card-foto {
-      padding-bottom: 24px;
+      padding-bottom: 20px;
     }
     .discription__card-title {
       padding-bottom: 17px;
@@ -2824,7 +2849,7 @@
       padding-top: 37px;
     }
     .events__cards-footer {
-      padding: 0 0 55px 28px;
+      padding: 0 0 55px 22px;
     }
     .events__swiper-pagination.swiper-pagination-fraction,
     .swiper-pagination-custom,
@@ -2852,7 +2877,7 @@
       margin-bottom: 26px;
     }
     .edition__right-swiper {
-      max-width: 289px;
+      width: 100%;
     }
     .edition__card-main_title,
     .edition__card-main_price,
@@ -2878,10 +2903,10 @@
       bottom: 54px;
     }
     .edition__card-main_top {
-      padding-bottom: 0;
+      padding-bottom: 3px;
     }
     .edition__card-main {
-      padding-bottom: 34px;
+      padding-bottom: 31px;
     }
     .edition__card-button {
       padding: 10px 34px 13px 34px;
@@ -2911,12 +2936,21 @@
       justify-content: space-between;
       width: 100%;
     }
+    .edition__checkbox-name {
+      padding-left: 24px;
+    }
+    .edition__checkbox {
+      margin-bottom: 24px;
+    }
+    .editions__price-input {
+      width: 62px
+    }
     .project__container-title {
       font-size: 28px;
       padding-bottom: 15px;
     }
     .project__container {
-      padding-top: 50px;
+      padding-top: 53px;
     }
     .project__swiper-title {
       font-size: 18px;
