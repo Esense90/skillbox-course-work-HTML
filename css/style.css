@@ -2332,6 +2332,10 @@
     .hero__description-text {
       padding: 0 15px 0 15px;
     }
+    .gallery__swiper-slide::after {
+      height: 73%;
+      top: 45%;
+    }
     .catalog__accordion-content_item {
       max-width: calc(100% / 2);
     }
@@ -2395,6 +2399,13 @@
     }
     .contacts__map>.ymaps-2-1-79-map>.ymaps-2-1-79-map>.ymaps-2-1-79-inner-panes .ymaps-2-1-79-events-pane {
       pointer-events: none;
+    }
+  }
+
+  @media (max-width: 598px) {
+    .gallery__swiper-slide::after {
+      height: 148%;
+      top: 89%;
     }
   }
 
@@ -2719,6 +2730,10 @@
     }
     .gallery__swiper-wrapper {
       height: 367px;
+    }
+    .gallery__swiper-slide::after {
+      height: 91%;
+      top: 52%;
     }
     .swiper__pagination-buttons {
       position: absolute;
