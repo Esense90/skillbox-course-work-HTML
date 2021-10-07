@@ -44,3 +44,18 @@ var swiper1 = new Swiper('.gallery__swiper-container', {
     }
   }
 });
+let swiperSlides = document.querySelector(".gallery").querySelectorAll(".gallery__swiper-slide");
+let modal = document.querySelector(".gallery__modal-wrapper");
+let modalBtn = modal.querySelector(".modal__close-btn");
+swiperSlides.forEach(el => {
+  el.addEventListener("click", function() {
+    let img = this.querySelector("img");
+    let link = img.getAttribute("src");
+    console.log(modal.querySelector("img"));
+    modal.classList.add("modal__active");
+    modal.querySelector("img").setAttribute("src", link);
+  })
+})
+modalBtn.addEventListener("click", function() {
+  modal.classList.remove("modal__active");
+});
