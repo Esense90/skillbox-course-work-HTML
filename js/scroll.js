@@ -1,25 +1,16 @@
-  $(function() {
-    $("#artists").on("click", "a", function(event) {
+$(function() {
 
-      event.preventDefault();
+  $('.accordion__content-btn').click(function() {
 
-      var block = $(this).attr('href'),
+    var artist = $(this).attr('data-link');
 
-        top = $(block).offset().top;
+    var block = $(`.catalog__countries-discription_card[data-view="${artist}"]`),
 
-      $('body,html').animate({ scrollTop: top }, 500);
-    });
+      top = $(block).offset().top;
+
+    if ($(window).width() < 893) {
+
+      $('html, body').animate({ scrollTop: top }, 1000)
+    }
   });
-
-  $(function() {
-    $("#nav").on("click", "a", function(event) {
-
-      event.preventDefault();
-
-      var block = $(this).attr('href'),
-
-        top = $(block).offset().top;
-
-      $('body,html').animate({ scrollTop: top }, 400);
-    });
-  });
+});
