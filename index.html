@@ -15,6 +15,7 @@
     <link rel="icon" href="./img/Blanchard.png" type="image/svg">
 
 
+
     <title>Blanchard</title>
 
   </head>
@@ -68,7 +69,7 @@
                 </g>
                 </svg>
             </div>
-            <nav class="header__top-nav">
+            <nav id="nav" class="header__top-nav">
               <ul class="header__top-list">
                 <li>
                   <button class="header__burger-close btn header__burger-active" type="button" aria-label="Меню" tabindex="0">
@@ -78,25 +79,25 @@
                 </button>
                 </li>
                 <li class="header__top-list_item">
-                  <a class="header__top-list_link" href="#" aria-label="пункт меню:О нас">О нас</a>
+                  <a class="header__top-list_link" href="#about" aria-label="пункт меню:О нас">О нас</a>
                 </li>
                 <li class="header__top-list_item">
-                  <a class="header__top-list_link" href="#" aria-label="пункт меню:Галерея">Галерея</a>
+                  <a class="header__top-list_link" href="#gallery" aria-label="пункт меню:Галерея">Галерея</a>
                 </li>
                 <li class="header__top-list_item">
-                  <a class="header__top-list_link" href="#" aria-label="пункт меню:Каталог">Каталог</a>
+                  <a class="header__top-list_link" href="#catalog" aria-label="пункт меню:Каталог">Каталог</a>
                 </li>
                 <li class="header__top-list_item">
-                  <a class="header__top-list_link" href="#" aria-label="пункт меню:События">События</a>
+                  <a class="header__top-list_link" href="#events" aria-label="пункт меню:События">События</a>
                 </li>
                 <li class="header__top-list_item">
-                  <a class="header__top-list_link" href="#" aria-label="пункт меню:Издания">Издания</a>
+                  <a class="header__top-list_link" href="#edition" aria-label="пункт меню:Издания">Издания</a>
                 </li>
                 <li class="header__top-list_item">
-                  <a class="header__top-list_link" href="#" aria-label="пункт меню:Проекты">Проекты</a>
+                  <a class="header__top-list_link" href="#project" aria-label="пункт меню:Проекты">Проекты</a>
                 </li>
                 <li class="header__top-list_item">
-                  <a class="header__top-list_link" href="#" aria-label="пункт меню:Контакты">Контакты</a>
+                  <a class="header__top-list_link" href="#contacts" aria-label="пункт меню:Контакты">Контакты</a>
                 </li>
               </ul>
               <div class="area__link-active">
@@ -348,7 +349,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <div class="container about__container">
           <h2 class="about__title">О нас</h2>
           <p class="about__subtitle">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать,
@@ -357,7 +358,7 @@
             а значит, должны быть разоблачены.</p>
         </div>
       </section>
-      <section class="gallery">
+      <section id="gallery" class="gallery">
         <div class="container gallery__container">
           <div class="gallery__filter">
             <h2 class="gallery__title">Галерея</h2>
@@ -595,7 +596,7 @@
           </div>
         </div>
       </section>
-      <section class="catalog">
+      <section id="catalog" class="catalog">
         <div class="container catalog__container">
           <div class="catalog__container-content">
             <div class="catalog__container-country">
@@ -1018,7 +1019,7 @@
                 </ul>
               </div>
               <div class="catalog__countries-discription_content catalog__active" data-target="3">
-                <div class="catalog__countries-discription_card painter__active" data-view="1">
+                <div id="domenico" class="catalog__countries-discription_card painter__active" data-view="1">
                   <div class="discription__card-foto">
                     <picture>
                       <img class="discription__card-img" src="./img/catalog_foto1.jpg" alt="Доменико Гирландайо">
@@ -1032,7 +1033,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="catalog__countries-discription_card" data-view="2">
+                <div id="benedetto" class="catalog__countries-discription_card" data-view="2">
                   <div class="discription__card-foto">
                     <picture>
                       <img class="discription__card-img" src="./img/Benedetto.jpg" alt="Бенедетто ди Биндо">
@@ -1046,7 +1047,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="catalog__countries-discription_card" data-view="3">
+                <div id="bergonie" class="catalog__countries-discription_card" data-view="3">
                   <div class="discription__card-foto">
                     <picture>
                       <img class="discription__card-img" src="./img/Bergonie.jpg" alt="Бергоньоне, Амброджо">
@@ -1060,7 +1061,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="catalog__countries-discription_card" data-view="4">
+                <div id="other" class="catalog__countries-discription_card" data-view="4">
                   <div class="discription__card-foto">
                     <img class="discription__card-img" src="./img/catalog_foto2.jpg" alt="Художник">
                   </div>
@@ -1087,79 +1088,79 @@
                       <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
                     </svg>
                     </h3>
-                    <div class="catalog__accordion-content">
+                    <div id="artists" class="catalog__accordion-content">
                       <ul class="catalog__accordion-content_list">
                         <li class="catalog__accordion-content_item" data-btn="2">
-                          <button class="accordion__content-btn btn">Бенедетто ди Биндо</button>
+                          <a href="#benedetto" class="accordion__content-btn btn">Бенедетто ди Биндо</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="3">
-                          <button class="accordion__content-btn btn">Бергоньоне, Амброджо</button>
+                          <a href="#bergonie" class="accordion__content-btn btn">Бергоньоне, Амброджо</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Биссоло, Франческо</button>
+                          <a href="#other" class="accordion__content-btn btn">Биссоло, Франческо</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Больтраффио, Джованни</button>
+                          <a href="#other" class="accordion__content-btn btn">Больтраффио, Джованни</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Бонсиньори, Франческо</button>
+                          <a href="#other" class="accordion__content-btn btn">Бонсиньори, Франческо</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Боттичини, Рафаэлло</button>
+                          <a href="#other" class="accordion__content-btn btn">Боттичини, Рафаэлло</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Брамантино</button>
+                          <a href="#other" class="accordion__content-btn btn">Брамантино</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Бреа, Людовико</button>
+                          <a href="#other" class="accordion__content-btn btn">Бреа, Людовико</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Бьяджо д’Антонио Туччи</button>
+                          <a href="#other" class="accordion__content-btn btn">Бьяджо д’Антонио Туччи</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Веккьетта</button>
+                          <a href="#other" class="accordion__content-btn btn">Веккьетта</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Андреа Верроккьо</button>
+                          <a href="#other" class="accordion__content-btn btn">Андреа Верроккьо</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="1">
-                          <button class="accordion__content-btn btn accordion__artist-active">Доменико Гирландайо</button>
+                          <a href="#domenico" class="accordion__content-btn btn accordion__artist-active">Доменико Гирландайо</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Беноццо Гоццоли</button>
+                          <a href="#other" class="accordion__content-btn btn">Беноццо Гоццоли</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Граначчи, Франческо</button>
+                          <a href="#other" class="accordion__content-btn btn">Граначчи, Франческо</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Грегорио ди Чекко</button>
+                          <a href="#other" class="accordion__content-btn btn">Грегорио ди Чекко</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Джованни да Удине</button>
+                          <a href="#other" class="accordion__content-btn btn">Джованни да Удине</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Джованни ди Паоло</button>
+                          <a href="#other" class="accordion__content-btn btn">Джованни ди Паоло</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Джорджоне</button>
+                          <a href="#other" class="accordion__content-btn btn">Джорджоне</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Парентино, Бернардо</button>
+                          <a href="#other" class="accordion__content-btn btn">Парентино, Бернардо</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Пезеллино</button>
+                          <a href="#other" class="accordion__content-btn btn">Пезеллино</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Пьетро Перуджино</button>
+                          <a href="#other" class="accordion__content-btn btn">Пьетро Перуджино</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Перуцци, Бальдассаре</button>
+                          <a href="#other" class="accordion__content-btn btn">Перуцци, Бальдассаре</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Пизанелло</button>
+                          <a href="#other" class="accordion__content-btn btn">Пизанелло</a>
                         </li>
                         <li class="catalog__accordion-content_item" data-btn="4">
-                          <button class="accordion__content-btn btn">Пинтуриккьо</button>
+                          <a href="#other" class="accordion__content-btn btn">Пинтуриккьо</a>
                         </li>
                       </ul>
                     </div>
@@ -1720,7 +1721,7 @@
           </div>
         </div>
       </section>
-      <section class="events">
+      <section id="events" class="events">
         <div class="container events__container">
           <h2 class="events__container-title">События</h2>
           <div class=" events__cards-swiper swiper-container">
@@ -1834,7 +1835,7 @@
           </div>
         </div>
       </section>
-      <section class="edition">
+      <section id="edition" class="edition">
         <div class="container edition__container">
           <div class="edition__container-left">
             <h4 class="edition__title">Издания</h4>
@@ -2153,7 +2154,7 @@
           </div>
         </div>
       </section>
-      <section class="project">
+      <section id="project" class="project">
         <div class="container project__container">
           <div class="project__container-top">
             <h2 class="project__container-title">Проекты</h2>
@@ -2268,7 +2269,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section id="contacts" class="contacts">
         <div class="contacts__header">
           <div class="container contacts__container">
             <h2 class="contacts__title">Контакты</h2>
@@ -2377,6 +2378,7 @@
     <script src="./js/burger.js"></script>
     <script src="./js/search.js"></script>
     <script src="./js/dropdown.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 
 </html>
