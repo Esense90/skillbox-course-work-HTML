@@ -15,6 +15,7 @@
     <link rel="icon" href="./img/Blanchard.png" type="image/svg">
 
 
+
     <title>Blanchard</title>
 
   </head>
@@ -68,7 +69,7 @@
                 </g>
                 </svg>
             </div>
-            <nav class="header__top-nav">
+            <nav id="nav" class="header__top-nav">
               <ul class="header__top-list">
                 <li>
                   <button class="header__burger-close btn header__burger-active" type="button" aria-label="Меню" tabindex="0">
@@ -78,25 +79,25 @@
                 </button>
                 </li>
                 <li class="header__top-list_item">
-                  <a class="header__top-list_link" href="#" aria-label="пункт меню:О нас">О нас</a>
+                  <a class="header__top-list_link" href="#about" aria-label="пункт меню:О нас">О нас</a>
                 </li>
                 <li class="header__top-list_item">
-                  <a class="header__top-list_link" href="#" aria-label="пункт меню:Галерея">Галерея</a>
+                  <a class="header__top-list_link" href="#gallery" aria-label="пункт меню:Галерея">Галерея</a>
                 </li>
                 <li class="header__top-list_item">
-                  <a class="header__top-list_link" href="#" aria-label="пункт меню:Каталог">Каталог</a>
+                  <a class="header__top-list_link" href="#catalog" aria-label="пункт меню:Каталог">Каталог</a>
                 </li>
                 <li class="header__top-list_item">
-                  <a class="header__top-list_link" href="#" aria-label="пункт меню:События">События</a>
+                  <a class="header__top-list_link" href="#events" aria-label="пункт меню:События">События</a>
                 </li>
                 <li class="header__top-list_item">
-                  <a class="header__top-list_link" href="#" aria-label="пункт меню:Издания">Издания</a>
+                  <a class="header__top-list_link" href="#edition" aria-label="пункт меню:Издания">Издания</a>
                 </li>
                 <li class="header__top-list_item">
-                  <a class="header__top-list_link" href="#" aria-label="пункт меню:Проекты">Проекты</a>
+                  <a class="header__top-list_link" href="#project" aria-label="пункт меню:Проекты">Проекты</a>
                 </li>
                 <li class="header__top-list_item">
-                  <a class="header__top-list_link" href="#" aria-label="пункт меню:Контакты">Контакты</a>
+                  <a class="header__top-list_link" href="#contacts" aria-label="пункт меню:Контакты">Контакты</a>
                 </li>
               </ul>
               <div class="area__link-active">
@@ -348,7 +349,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <div class="container about__container">
           <h2 class="about__title">О нас</h2>
           <p class="about__subtitle">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать,
@@ -357,7 +358,7 @@
             а значит, должны быть разоблачены.</p>
         </div>
       </section>
-      <section class="gallery">
+      <section id="gallery" class="gallery">
         <div class="container gallery__container">
           <div class="gallery__filter">
             <h2 class="gallery__title">Галерея</h2>
@@ -595,7 +596,7 @@
           </div>
         </div>
       </section>
-      <section class="catalog">
+      <section id="catalog" class="catalog">
         <div class="container catalog__container">
           <div class="catalog__container-content">
             <div class="catalog__container-country">
@@ -1087,7 +1088,7 @@
                       <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
                     </svg>
                     </h3>
-                    <div class="catalog__accordion-content">
+                    <div id="artists" class="catalog__accordion-content">
                       <ul class="catalog__accordion-content_list">
                         <li class="catalog__accordion-content_item" data-btn="2">
                           <a href="#benedetto" class="accordion__content-btn btn">Бенедетто ди Биндо</a>
@@ -1720,7 +1721,7 @@
           </div>
         </div>
       </section>
-      <section class="events">
+      <section id="events" class="events">
         <div class="container events__container">
           <h2 class="events__container-title">События</h2>
           <div class=" events__cards-swiper swiper-container">
@@ -1834,7 +1835,7 @@
           </div>
         </div>
       </section>
-      <section class="edition">
+      <section id="edition" class="edition">
         <div class="container edition__container">
           <div class="edition__container-left">
             <h4 class="edition__title">Издания</h4>
@@ -2153,7 +2154,7 @@
           </div>
         </div>
       </section>
-      <section class="project">
+      <section id="project" class="project">
         <div class="container project__container">
           <div class="project__container-top">
             <h2 class="project__container-title">Проекты</h2>
@@ -2268,7 +2269,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section id="contacts" class="contacts">
         <div class="contacts__header">
           <div class="container contacts__container">
             <h2 class="contacts__title">Контакты</h2>
@@ -2377,6 +2378,7 @@
     <script src="./js/burger.js"></script>
     <script src="./js/search.js"></script>
     <script src="./js/dropdown.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 
 </html>
