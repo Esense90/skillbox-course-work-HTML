@@ -1,16 +1,17 @@
-$(function() {
+$('button.accordion__content-btn').on('click', function(event) {
 
-  $('.accordion__content-btn').click(function() {
+  event.preventDefault();
 
-    var artist = $(this).attr('data-link');
+  var $anchor = $(this).attr('data-link');
 
-    var block = $(`.catalog__countries-discription_card[data-view="${artist}"]`),
+  if ($(window).width() < 893) {
 
-      top = $(block).offset().top;
+    setTimeout(function() {
 
-    if ($(window).width() < 893) {
+      $('html, body').stop().animate({
 
-      $('html, body').animate({ scrollTop: top }, 1000)
-    }
-  });
+        scrollTop: $('.block-' + $anchor).offset().top
+      }, 900);
+    }, 0.1);
+  }
 });
