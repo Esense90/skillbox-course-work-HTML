@@ -38,20 +38,20 @@ $message = "<table style='width: 50%;'>$message</table>";
 
 
 // От кого
-$mail->setFrom('adm@' . $_SERVER['HTTP_HOST'], 'Blanchard.ru');
+$mail->setFrom('adm@' . $_SERVER['HTTP_HOST'], 'Blanchard');
 
 // Кому
 foreach ( $admin_email as $key => $value ) {
 	$mail->addAddress($value);
 }
 // Тема письма
-$mail->Subject = '=?utf-8?b?'. base64_encode($form_subject) .'?=';
+$mail->Subject = $form_subject;
 
 // Тело письма
 $body = $message;
 // $mail->isHTML(true);  это если прям верстка
 $mail->msgHTML($body);
 
-$mail->send();
 
+$mail->send();
 ?>
