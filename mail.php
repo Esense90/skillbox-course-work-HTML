@@ -38,12 +38,15 @@ $message = "<table style='width: 50%;'>$message</table>";
 
 
 // От кого
-$mail->setFrom('adm@' . $_SERVER['HTTP_HOST'], 'Blanchard');
+$mail->setFrom('Blanchard@' . $_SERVER['HTTP_HOST'], 'Blanchard');
 
 // Кому
 foreach ( $admin_email as $key => $value ) {
 	$mail->addAddress($value);
 }
+
+$headers = 'Content-type: text/html; charset=iso-8859-1' . '\r\n';
+
 // Тема письма
 $mail->Subject = $form_subject;
 
