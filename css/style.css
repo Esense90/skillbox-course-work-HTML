@@ -1653,6 +1653,48 @@ img {
   transition: all 0.3s ease;
 }
 
+.thanks__popup {
+  position: fixed;
+  top: 280px;
+  left: 740px;
+  right: 810px;
+  bottom: 530px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 10px 0;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.thanks__popup-active {
+  opacity: 1;
+}
+
+.thanks__popup-img {
+  width: 50px;
+  height: 50px;
+}
+
+.thanks__popup-text {
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--color-purpule);
+  cursor: default;
+}
+
+.style__popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 10px 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+
 @media (max-width: 1423px) {
   .gallery__swiper-slide {
     width: 280px;

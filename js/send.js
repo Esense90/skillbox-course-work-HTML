@@ -31,6 +31,12 @@ let validateForms = function(selector, rules, successModal, yaGoal) {
         if (xhr.readyState === 4) {
           if (xhr.status === 200) {
             console.log('Отправлено');
+            setTimeout(function() {
+              document.querySelector('.thanks__popup').classList.add('thanks__popup-active');
+            }, 0.5);
+            setTimeout(function() {
+              document.querySelector('.thanks__popup').classList.remove('thanks__popup-active');
+            }, 2);
           }
         }
       }
