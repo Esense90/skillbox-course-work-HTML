@@ -36,7 +36,7 @@ let validateForms = function(selector, rules, successModal, yaGoal) {
             }, 100);
             setTimeout(function() {
               document.querySelector('.thanks__popup').classList.remove('thanks__popup-active');
-            }, 9000);
+            }, 5000);
           }
         }
       }
