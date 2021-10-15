@@ -573,7 +573,7 @@ img {
 }
 
 .gallery__info {
-  padding-top: 553px;
+  padding-top: 556px;
   font-weight: 600;
   font-size: 16px;
   line-height: 32px;
@@ -844,7 +844,7 @@ img {
   font-weight: 400;
   font-size: 12px;
   color: var(--color-light-grey);
-  margin-bottom: 6px;
+  margin-bottom: 9px;
 }
 
 .discription__card-subtitle {
@@ -1123,7 +1123,7 @@ img {
 }
 
 .events {
-  padding-bottom: 70px;
+  padding-bottom: 72px;
 }
 
 .edition {
@@ -1153,7 +1153,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   color: var(--color-white);
-  padding-bottom: 11px;
+  padding-bottom: 14px;
 }
 
 .edition__checkbox-name {
@@ -1205,7 +1205,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   color: var(--color-white);
-  padding-bottom: 14px;
+  padding-bottom: 17px;
 }
 
 .edition__checkbox {
@@ -1248,7 +1248,7 @@ img {
 
 .edition__container {
   display: flex;
-  padding-bottom: 70px;
+  padding-bottom: 72px;
 }
 
 .edition__container-left {
@@ -1654,24 +1654,22 @@ img {
 }
 
 .thanks__popup {
+  display: none;
   position: fixed;
-  top: 280px;
-  left: 740px;
-  right: 810px;
-  bottom: 530px;
-  z-index: 100;
-  display: flex;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 0 10px 0;
+  justify-content: space-evenly;
+  width: 400px;
+  height: 130px;
   background: rgba(0, 0, 0, 0.9);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  z-index: 100;
 }
 
-.thanks__popup-active {
-  opacity: 1;
+.thanks__popup.thanks__popup-active {
+  display: flex;
 }
 
 .thanks__popup-img {
@@ -1684,15 +1682,6 @@ img {
   font-size: 32px;
   color: var(--color-purpule);
   cursor: default;
-}
-
-.style__popup {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0 10px 0;
-  background: rgba(0, 0, 0, 0.9);
 }
 
 @media (max-width: 1423px) {
@@ -2695,6 +2684,17 @@ img {
   }
   .contacts__wrapper-wrapper {
     padding: 123px 0 0 10px;
+  }
+  .thanks__popup-text {
+    font-size: 26px;
+  }
+  .thanks__popup-img {
+    width: 40px;
+    height: 40px;
+  }
+  .thanks__popup {
+    width: 280px;
+    height: 110px;
   }
 }
 
